@@ -1,3 +1,9 @@
+$ dig www.sfsoupparty.org +nostats +nocomments +nocmd
+> ;www.sfsoupparty.org.                    IN      A
+> www.sfsoupparty.org.             3592    IN      CNAME   masonzoyt.github.io.
+> masonzoyt.github.io.      43192   IN      CNAME   GITHUB-PAGES-SERVER .
+> GITHUB-PAGES-SERVER .         22      IN      A       192.0.2.1
+
 <meta name="wb:op" content="59c22cb758d9904323db5571d008d7e6"/>
 <!DOCTYPE html> 
 <html> 
