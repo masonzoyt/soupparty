@@ -1,32 +1,36 @@
 <!DOCTYPE html> 
+
+
 <html> 
     <link rel="stylesheet" href="style.css">
     <title> SF soup party operations </title>
+       
         <body> 
-        <div class = "container">
+             <div class = "container">
 
                 <h1 id= "headline">the next soup party is in...</h1>
                 <div class="countDownDate"> </div>
-                   <div>
+                     <div>
                         <p id="days">00</p>
                         <span>Days</span>
-                   </div>
-                   <div>
-                    <p id="hours">00</p>
-                    <span>Hours</span>
+                    </div>
+                    <div>
+                        <p id="hours">00</p>
+                        <span>Hours</span>
+                    </div>
                     <div>
                         <p id="minutes">00</p>
                         <span>Minutes</span>
                     </div>
                     <div>
-                         <p id="seconds">00</p>
-                         <span>Seconds</span>
+                        <p id="seconds">00</p>
+                        <span>Seconds</span>
                     </div>
                </div>
 
-         </div>
+            </div>
             <script>
-                var countDownDate = new Date("December 2, 2023 06:00:00").getTime();
+                var countDownDate = new Date("December 2, 2023 04:00:00").getTime();
                 var x = setInterval(function(){
                     var now = new Date().getTime();
                     var distance = countDownDate - now;
