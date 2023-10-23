@@ -3,30 +3,30 @@
     <link rel="stylesheet" href="style.css">
     <title> SF soup party operations </title>
         <body> 
-            <nav> <a href="#">the next soup party is in:</a></nav>
-            <div class = "container">
+        <div class = "container">
+
                 <h1 id= "headline">the next soup party is in...</h1>
-                <div class="countdown"> </div>
+                <div class="countDownDate"> </div>
                    <div>
-                        <p>00</p>
+                        <p id="days">00</p>
                         <span>Days</span>
                    </div>
                    <div>
-                    <p>00</p>
+                    <p id="hours">00</p>
                     <span>Hours</span>
                     <div>
-                        <p>00</p>
+                        <p id="minutes">00</p>
                         <span>Minutes</span>
                     </div>
                     <div>
-                         <p>00</p>
+                         <p id="seconds">00</p>
                          <span>Seconds</span>
                     </div>
                </div>
 
-            </div>
+         </div>
             <script>
-                var countDownDate = new Date("December 2, 2023 18:00:00").getTime();
+                var countDownDate = new Date("December 2, 2023 06:00:00").getTime();
                 var x = setInterval(function(){
                     var now = new Date().getTime();
                     var distance = countDownDate - now;
