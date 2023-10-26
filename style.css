@@ -20,5 +20,17 @@ button {
     padding-bottom: 10px;
    
 }
- 
-    
+
+puzzle1{
+    background-color: darkolivegreen;
+}
+
+h1{
+    text-align: center;
+    font-family: sans-serif;
+}    
+
+p1{
+    text-align: center;
+    font-family: sans-serif;
+}
