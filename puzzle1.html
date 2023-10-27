@@ -32,4 +32,35 @@
     }
   
   </script>
+
+
+
+  <div2>
+      <label>
+        <form> 
+          <label for="answer">fredrick & stanyan? </label>
+          <input type="text" id="answer" required> 
+          <button type="submit" onclick="validateForm()">test my wits</button>
+        </form>
+     </label>
+    </div2>
+
+  <script> 
+    function validateForm(){ //function= "everything below does this" validate form= "is this what you're supposed to put here?"
+      const answerInput = document.getElementById("answer") //"find everything id'd/labeled answer" (does "id" JS respond to HTML "label"?)
+      const allowedAnswers = ["golden gate park", "Golden Gate Park", "Golden gate park", "ggp", "GGP"] //which answers are allowed. const (constant) b/c it will not change. 
+
+      const userInput= answerInput.value.trim();
+
+      if (allowedAnswers.includes(userInput)) { //if answer given is one of the allowed ones 
+        document.getElementById("message").textContent="Correct";
+        return true; //let them submit it
+      } else { //if not....
+        alert ("try again"); // "sorry that was wrong lol"
+        return false; // no submitty 
+      }
+
+    }
+  
+  </script>
 </html>
