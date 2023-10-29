@@ -1,6 +1,7 @@
 
 html {
-    background-image: url("downloads/index background.html");
+    background-image: url("index background.jpg");
+        image-resolution: 100;
     font-family: sans-serif;
     color; #4A454A;
 }
