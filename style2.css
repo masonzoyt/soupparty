@@ -1,6 +1,7 @@
 html{
     text-align: center;
     font-family: sans-serif;
+    background-color: darkcyan;
 }
 
 p1{
@@ -14,5 +15,10 @@ div1{
 }
 
 div2{
+    padding-bottom: 20px;
+}
+
+div3{
     padding-top: 20px;
 }
+
