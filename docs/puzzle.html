@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+  <link rel="stylesheet" href="style2.css">
+  <h1> soup party: see you there? </h1> 
+  <p1> input your answers. there is a correct answer to each question. </p1> 
+
+    <div1>
+      <label>
+        <form> 
+          <label for="answer1">jackson & steiner?</label>
+          <input type="text" id="answer" required> 
+          <button type="submit" onclick="validateForm()">test my wits</button>
+        </form>
+     </label>
+    </div1>
+
+  <script> 
+    function validateForm(){ //function= "everything below does this" validate form= "is this what you're supposed to put here?"
+      const answerInput = document.getElementById("answer") //"find everything id'd/labeled answer" (does "id" JS respond to HTML "label"?)
+      const allowedAnswers1 = ["alta plaza park", "alta plaza", "Alta Plaza", "Alta Plaza Park"] //which answers are allowed. const (constant) b/c it will not change. 
+
+      const userInput= answerInput.value.trim();
+
+      if (allowedAnswers.includes(userInput)) { //if answer given is one of the allowed ones 
+        document.getElementById("message").textContent="Correct";
+        return true; //let them submit it
+      } else { //if not....
+        alert ("try again"); // "sorry that was wrong lol"
+        return false; // no submitty 
+      }
+
+    }
+  
+  </script>
+
+
+
+  <div2>
+      <label>
+        <form> 
+          <label for="answer2">fredrick & stanyan? </label>
+          <input type="text" id="answer" required> 
+          <button type="submit" onclick="validateForm()">test my wits</button>
+        </form>
+     </label>
+    </div2>
+
+  <script> 
+    function validateForm(){ //function= "everything below does this" validate form= "is this what you're supposed to put here?"
+      const answerInput = document.getElementById("answer") //"find everything id'd/labeled answer" (does "id" JS respond to HTML "label"?)
+      const allowedAnswers2 = ["golden gate park", "Golden Gate Park", "Golden gate park", "ggp", "GGP"] //which answers are allowed. const (constant) b/c it will not change. 
+
+      const userInput= answerInput.value.trim();
+
+      if (allowedAnswers.includes(userInput)) { //if answer given is one of the allowed ones 
+        document.getElementById("message").textContent="Correct";
+        return true; //let them submit it
+      } else { //if not....
+        alert ("try again"); // "sorry that was wrong lol"
+        return false; // no submitty 
+      }
+
+    }
+  
+  </script>
+
+<div3>
+  <label>
+    <form> 
+      <label for="answer3">test</label>
+      <input type="text" id="answer" required> 
+      <button type="submit" onclick="validateForm()">test my wits</button>
+    </form>
+ </label>
+</div3>
+
+<script> 
+function validateForm(){ //function= "everything below does this" validate form= "is this what you're supposed to put here?"
+  const answerInput = document.getElementById("answer") //"find everything id'd/labeled answer" (does "id" JS respond to HTML "label"?)
+  const allowedAnswers3 = ["test"] //which answers are allowed. const (constant) b/c it will not change. 
+
+  const userInput= answerInput.value.trim();
+
+  if (allowedAnswers.includes(userInput)) { //if answer given is one of the allowed ones 
+    document.getElementById("message").textContent="Correct";
+    return true; //let them submit it
+  } else { //if not....
+    alert ("try again"); // "sorry that was wrong lol"
+    return false; // no submitty 
+  }
+
+}
+
+</script>
+
+    <div4> <!-- bring users to the binary entry page -->
+        <label> "sucess-button" </label>
+        <a href="almost.html" class = "next-button"> next page </a>
+
+    </div4>
+
+<script>
+    const isAnswer1valid = allowedAnswers1.includes(userAnswer1);
+    const isAnswer2valid = allowedAnswers2.includes(userAnswer2);
+    const isAnswer3valid = allowedAnswers3.includes(userAnswer3);
+
+    if (isAnswer1valid && isAnswer2valid && isAnswer3valid)
+        function showSuccessButton(){
+            document.getElementById("success-button").style.display = "block"; 
+        }
+   
+    //needs to allow submission if both are true
+
+    //upon submit if true, needs to bring users to next screen which i havent made yetttttt
+    
+
+
+
+</script>
+</html>
