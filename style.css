@@ -8,10 +8,18 @@ html {
 
 
 
-div {
-    margin: 70px;
-    text-align: center;
-    color: black;
+.container {
+    display: flex;
 }
-
-
+.container div {
+    flex-basis: 100px;
+}
+.container div p {
+    font-size: 20px;
+}
+.container h1{
+    text-align: center;
+}
+.html div button {
+    text-align: center;
+}
