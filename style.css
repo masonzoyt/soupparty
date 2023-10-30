@@ -1,12 +1,17 @@
 
 html {
     background-image: url("index background.jpg");
-        image-resolution: 100;
+    background-size: cover;
     font-family: sans-serif;
     color; #4A454A;
 }
+
+
+
 div {
+    margin: 70px;
     text-align: center;
-    
+    color: black;
 }
+
 
