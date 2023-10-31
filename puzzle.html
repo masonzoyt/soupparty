@@ -95,7 +95,9 @@ function validateForm(){ //function= "everything below does this" validate form=
 
 </script>
 
-  
+<button id="success-button"> continue
+  <a href = "almost.html" > </a>
+</button>
 
   
 <script> //this part is supposed to only allow submit if all questions are correct 
@@ -104,7 +106,7 @@ function validateForm(){ //function= "everything below does this" validate form=
     const isAnswer3valid = allowedAnswers3.includes(userAnswer3);
 
     if (isAnswer1valid && isAnswer2valid && isAnswer3valid)
-        function showSuccessButton(){
+        function showSuccessButton(){ 
             document.getElementById("success-button").style.display = "block"; 
         }
    
@@ -112,10 +114,5 @@ function validateForm(){ //function= "everything below does this" validate form=
 
 </script>
 
-<div class = "sucess-button"> <!-- bring users to the binary entry page -->
-  <label> "sucess-button" </label>
-  <a href="almost.html" class = "next-button"> next page </a>
-
-</div>
   
 </html>
