@@ -6,7 +6,7 @@
   <h1> soup party: see you there? </h1> 
   <p1> input your answers. there is a correct answer to each question. </p1> 
 
-    <div1>
+    <div class = "answer 1">
       <label>
         <form> 
           <label for="answer1">jackson & steiner?</label>
@@ -14,7 +14,7 @@
           <button type="submit" onclick="validateForm()">test my wits</button>
         </form>
      </label>
-    </div1>
+    </div class = "answer1">
 
   <script> 
     function validateForm(){ //function= "everything below does this" validate form= "is this what you're supposed to put here?"
@@ -37,7 +37,7 @@
 
 
 
-  <div2>
+  <div class = "answer 2">
       <label>
         <form> 
           <label for="answer2">fredrick & stanyan? </label>
@@ -45,7 +45,7 @@
           <button type="submit" onclick="validateForm()">test my wits</button>
         </form>
      </label>
-    </div2>
+    </div class = "answer2">
 
   <script> 
     function validateForm(){ //function= "everything below does this" validate form= "is this what you're supposed to put here?"
@@ -66,7 +66,7 @@
   
   </script>
 
-<div3>
+<div class = "answer 3">
   <label>
     <form> 
       <label for="answer3">test</label>
@@ -95,13 +95,14 @@ function validateForm(){ //function= "everything below does this" validate form=
 
 </script>
 
-    <div4> <!-- bring users to the binary entry page -->
+    <div class = "sucess-button"> <!-- bring users to the binary entry page -->
         <label> "sucess-button" </label>
         <a href="almost.html" class = "next-button"> next page </a>
 
     </div4>
 
-<script>
+  
+<script> //this part is supposed to only allow submit if all questions are correct 
     const isAnswer1valid = allowedAnswers1.includes(userAnswer1);
     const isAnswer2valid = allowedAnswers2.includes(userAnswer2);
     const isAnswer3valid = allowedAnswers3.includes(userAnswer3);
