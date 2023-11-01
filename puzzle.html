@@ -9,29 +9,28 @@
     <div class = "answer 1">
       <label>
         <form> 
-          <label for="answer1">jackson & steiner?</label>
+          <label for="answer 1">jackson & steiner?</label>
           <input type="text" id="answer" required> 
-          <button type="submit" onclick="validateForm()">test my wits</button>
         </form>
      </label>
     </div>
 
   <script> 
     function validateForm(){ //function= "everything below does this" validate form= "is this what you're supposed to put here?"
-      const answerInput = document.getElementById("answer") //"find everything id'd/labeled answer" (does "id" JS respond to HTML "label"?)
-      const allowedAnswers1 = ["alta plaza park", "alta plaza", "Alta Plaza", "Alta Plaza Park"] //which answers are allowed. const (constant) b/c it will not change. 
+   //   const answerInput = document.getElementById("answer 1") //"find everything id'd/labeled answer" (does "id" JS respond to HTML "label"?)
+      
 
-      const userInput= answerInput.value.trim();
+  //    const userInput= answerInput.value.trim();
 
-      if (allowedAnswers.includes(userInput)) { //if answer given is one of the allowed ones 
-        document.getElementById("message").textContent="Correct";
-        return true; //let them submit it
-      } else { //if not....
-        alert ("try again"); // "sorry that was wrong lol"
-        return false; // no submitty 
-      }
+  //    if (allowedAnswers.includes(userInput)) { //if answer given is one of the allowed ones 
+   //     document.getElementById("message").textContent="Correct";
+   //     return true; //let them submit it
+   //   } else { //if not....
+   //     alert ("try again"); // "sorry that was wrong lol"
+    //    return false; // no submitty 
+     // }
 
-    }
+   // }
   
   </script>
 
@@ -42,65 +41,78 @@
         <form> 
           <label for="answer2">fredrick & stanyan? </label>
           <input type="text" id="answer" required> 
-          <button type="submit" onclick="validateForm()">test my wits</button>
         </form>
      </label>
     </div>
 
-  <script> 
-    function validateForm(){ //function= "everything below does this" validate form= "is this what you're supposed to put here?"
-      const answerInput = document.getElementById("answer") //"find everything id'd/labeled answer" (does "id" JS respond to HTML "label"?)
-      const allowedAnswers2 = ["golden gate park", "Golden Gate Park", "Golden gate park", "ggp", "GGP"] //which answers are allowed. const (constant) b/c it will not change. 
+ <script>
+//  //function validateForm(){ //function= "everything below does this" validate form= "is this what you're supposed to put here?"
+//      const answerInput = document.getElementById("answer") //"find everything id'd/labeled answer" (does "id" JS respond to HTML "label"?)
+ //     
+ //     const userInput= answerInput.value.trim();
 
-      const userInput= answerInput.value.trim();
+ //     if (allowedAnswers.includes(userInput)) { //if answer given is one of the allowed ones 
+ //       document.getElementById("message").textContent="Correct";
+ //       return true; //let them submit it
+ //     } else { //if not....
+ //       alert ("try again"); // "sorry that was wrong lol"
+ //       return false; // no submitty 
+ //     }
 
-      if (allowedAnswers.includes(userInput)) { //if answer given is one of the allowed ones 
-        document.getElementById("message").textContent="Correct";
-        return true; //let them submit it
-      } else { //if not....
-        alert ("try again"); // "sorry that was wrong lol"
-        return false; // no submitty 
-      }
+ //   }
 
-    }
-  
   </script>
 
 <div class = "answer 3">
   <label>
     <form> 
-      <label for="answer3">test</label>
+      <label for="answer 3">test</label>
       <input type="text" id="answer" required> 
-      <button type="submit" onclick="validateForm()">test my wits</button>
     </form>
  </label>
 </div>
 
 <script> 
-function validateForm(){ //function= "everything below does this" validate form= "is this what you're supposed to put here?"
-  const answerInput = document.getElementById("answer") //"find everything id'd/labeled answer" (does "id" JS respond to HTML "label"?)
-  const allowedAnswers3 = ["test"] //which answers are allowed. const (constant) b/c it will not change. 
+// function validateForm(){ //function= "everything below does this" validate form= "is this what you're supposed to put here?"
+ // const answerInput = document.getElementById("answer") //"find everything id'd/labeled answer" (does "id" JS respond to HTML "label"?)
+ 
 
-  const userInput= answerInput.value.trim();
+ // const userInput= answerInput.value.trim();
 
-  if (allowedAnswers.includes(userInput)) { //if answer given is one of the allowed ones 
-    document.getElementById("message").textContent="Correct";
-    return true; //let them submit it
-  } else { //if not....
-    alert ("try again"); // "sorry that was wrong lol"
-    return false; // no submitty 
-  }
+//  if (allowedAnswers.includes(userInput)) { //if answer given is one of the allowed ones 
+//    document.getElementById("message").textContent="Correct";
+//    return true; //let them submit it
+//  } else { //if not....
+//    alert ("try again"); // "sorry that was wrong lol"
+//    return false; // no submitty 
+//  }
 
-}
+// }
 
 </script>
+
 
 <button id="success-button"> continue
   <a href = "almost.html" > </a>
 </button>
 
   
-<script> //this part is supposed to only allow submit if all questions are correct 
+<script> // this part is supposed to only allow submit if all questions are correct 
+
+  const allowedAnswers1 = ["alta plaza park", "alta plaza", "Alta Plaza", "Alta Plaza Park"] //which answers are allowed. const (constant) b/c it will not change. 
+  const allowedAnswers2 = ["golden gate park", "Golden Gate Park", "Golden gate park", "ggp", "GGP"] //which answers are allowed. const (constant) b/c it will not change. 
+  const allowedAnswers3 = ["test"] //which answers are allowed. const (constant) b/c it will not change. 
+
+
+
+
+    document.getElementById("submit-button").addEventListener("click", function() {  
+        const userAnswer1 = document.getElementById("answer 1").value.trim();
+        const userAnswer2 = document.getElementById("answer 2").value.trim();
+        const userAnswer3 = document.getElementById("answer 3").value.trim();
+
+
+
     const isAnswer1valid = allowedAnswers1.includes(userAnswer1);
     const isAnswer2valid = allowedAnswers2.includes(userAnswer2);
     const isAnswer3valid = allowedAnswers3.includes(userAnswer3);
