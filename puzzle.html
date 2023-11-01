@@ -6,16 +6,15 @@
   <h1> soup party: see you there? </h1> 
   <p1> input your answers. there is a correct answer to each question. </p1> 
 
-    <div class = "answer 1">
-      <label>
-        <form> 
+
+<body>
+    <div class = "answers">
+       
           <label for="answer 1">jackson & steiner?</label>
           <input type="text" id="answer" required> 
-        </form>
-     </label>
-    </div>
 
-  <script> 
+
+<script> 
     function validateForm(){ //function= "everything below does this" validate form= "is this what you're supposed to put here?"
    //   const answerInput = document.getElementById("answer 1") //"find everything id'd/labeled answer" (does "id" JS respond to HTML "label"?)
       
@@ -28,22 +27,22 @@
    //   } else { //if not....
    //     alert ("try again"); // "sorry that was wrong lol"
     //    return false; // no submitty 
-     // }
+     // }//REMOVED INDIVIDUAL DIVS, REMOVED FORMS AND LABELS EXCEPT FOR ANSWER 
 
    // }
   
-  </script>
+</script>
 
 
 
-  <div class = "answer 2">
-      <label>
-        <form> 
+  
+    
+    
           <label for="answer2">fredrick & stanyan? </label>
           <input type="text" id="answer" required> 
-        </form>
-     </label>
-    </div>
+     
+
+    
 
  <script>
 //  //function validateForm(){ //function= "everything below does this" validate form= "is this what you're supposed to put here?"
@@ -63,14 +62,13 @@
 
   </script>
 
-<div class = "answer 3">
-  <label>
-    <form> 
+
+    
       <label for="answer 3">test</label>
       <input type="text" id="answer" required> 
-    </form>
- </label>
-</div>
+   
+ 
+
 
 <script> 
 // function validateForm(){ //function= "everything below does this" validate form= "is this what you're supposed to put here?"
@@ -91,6 +89,7 @@
 
 </script>
 
+</body>
 
 <button id="success-button"> continue
   <a href = "almost.html" > </a>
