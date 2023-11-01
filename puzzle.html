@@ -1,30 +1,29 @@
 <!DOCTYPE html>
-
-
 <html>
+<head>
   <link rel="stylesheet" href="style2.css">
-  <h1> soup party: see you there? </h1> 
-  <p1> input your answers. there is a correct answer to each question. </p1> 
-
-
+</head>
 <body>
-    <div class = "answers">
+  <h1> soup party: see you there? </h1> 
+  <p> input your answers. there is a correct answer to each question. </p> 
+
+
+    <div class = "question-container">
        
           <label for="answer1">jackson & steiner?</label>
-          <input type="text" id="answer" required> 
+          <input type="text" id="answer1" required> 
 
           <label for="answer2">fredrick & stanyan? </label>
-          <input type="text" id="answer" required> 
+          <input type="text" id="answer2" required> 
     
           <label for="answer3">test</label>
-         <input type="text" id="answer" required> 
-   
+         <input type="text" id="answer3" required> 
+    </div>
  
-</body>
 
-<button id="success-button"> continue
-  <a href = "almost.html" > </a>
-</button>
+
+<button id="submit-button"> test my wits </button>
+<button id="success-button" style="display: none"> continue </button>
 
   
 <script> // this part is supposed to only allow submit if all questions are correct 
@@ -49,12 +48,18 @@
 
     if (isAnswer1valid && isAnswer2valid && isAnswer3valid)
         function showSuccessButton(){ 
-            document.getElementById("success-button").style.display = "block"; 
+
+        function showSuccessButton(){
+            const successButton= document.getElementById("success-button")
+            successButton.style.display = "block"; 
+            successButton.addEventListener("click, function")( {
+              wimdow.location.href = "almost.html" ;
+            )} ;
         }
    
   
 
 </script>
 
-  
+</body>
 </html>
