@@ -4,6 +4,7 @@ html {
     font-family: sans-serif;
     color: #4A454A;
     display: flex;
+    flex-direction: column;
     justify-content: center; 
     align-items: center;
     height: 100vh;
