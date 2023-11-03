@@ -6,7 +6,7 @@ html {
     display: flex;
     justify-content: center; 
     align-items: center;
-    height: 20 px
+    height: 100vh;
 }
 
 
