@@ -3,9 +3,10 @@ html {
     background-size: cover;
     font-family: sans-serif;
     color: #4A454A;
+    display: flex;
     justify-content: center; 
-    display: flex
-    height: 20 px 
+    align-items: center;
+    height: 20 px
 }
 
 
