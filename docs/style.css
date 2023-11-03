@@ -1,23 +1,25 @@
 
 html {
-    background-color: rgb(194, 184, 255);
+    background-image: url("better background.jpg");
+    background-size: cover;
     font-family: sans-serif;
+    color: #4A454A;
 }
-div {
+
+
+
+.container {
+    display: flex;
+}
+.container div {
+    flex-basis: 100px;
+}
+.container div p {
+    font-size: 20px;
+}
+.container h1{
     text-align: center;
-    
 }
-
-
-button {
-    align-content: center;
-    font-family: sans-serif;
-    background-color: dodgerblue;
-    border-radius: 10px;
-    padding-top: 10px;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-bottom: 10px;
-   
+.html div button {
+    text-align: center;
 }
-
