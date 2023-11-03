@@ -12,20 +12,22 @@ html {
 
 
 
-.container {
+.container { /* what happens here overrides everything in the html {} one */
     display: flex;
     flex-direction: columns; 
     align-items: center;
     
 }
-.container div {
-    
+.container div { /* what happens here only happens to the container divs */
+    display: flex; 
+    flex-direction: rows;
+    align-items: center;
     flex-basis: 100px;
 }
-.container div p {
+.container div p { /* what happens here only happens to the container div ps */
     font-size: 20px;
 }
-.container h1{
+.container h1{ 
     text-align: center;
 }
 .html div class= link{
