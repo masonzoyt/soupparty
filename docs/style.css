@@ -20,15 +20,19 @@ html {
 }
 .container div { /* what happens here only happens to the container divs */
     display: flex; 
-    flex-direction: rows;
+    flex-direction: columns;
     align-items: center;
     flex-basis: 100px;
 }
-.container div p { /* what happens here only happens to the container div ps */
+.container div p { /* what happens here only happens to the container div ps aka the numbers(we get more and more specific, basically) */
+    
     font-size: 20px;
 }
 .container h1{ 
-    text-align: center;
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
 }
 .html div class= link{
     text-align: center;
