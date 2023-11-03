@@ -14,7 +14,7 @@ html {
 .container {
     display: flex;
     flex-direction: columns; 
-    align-items: center 
+    align-items: center;
     
 }
 .container div {
@@ -27,6 +27,6 @@ html {
 .container h1{
     text-align: center;
 }
-.html {
+.html div class= link{
     text-align: center;
 }
