@@ -3,14 +3,22 @@ html {
     background-size: cover;
     font-family: sans-serif;
     color: #4A454A;
+    justify-content: center; 
+    disply: flex
+    align-items: center; 
+    height: 20 px 
 }
 
 
 
 .container {
     display: flex;
+    flex-direction: columns; 
+    align-items: center 
+    
 }
 .container div {
+    
     flex-basis: 100px;
 }
 .container div p {
