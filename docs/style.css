@@ -2,7 +2,6 @@ html {
     background-image: url("better background.jpg");
     background-size: cover;
     font-family: sans-serif;
-    color: #4A454A;
     display: flex; 
     flex-direction: column;
     justify-content: center; 
