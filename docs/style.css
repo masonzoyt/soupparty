@@ -18,13 +18,14 @@ html {
       /*  align-items: center; /* be in the middle */ 
     
 }
-.container div { /* what happens here only happens to the container divs */
-    align-items: center;
+.container div { /* TEXT */
+    display: flex;
     
 }
-.container div p { /* what happens here only happens to the container div ps aka the numbers(we get more and more specific, basically) */
+.container div p { /* NUMBERS */
     color: #3DAEDF; 
-    font-size: 30px;
+    font-size: 60px;
+    margin-bottom: -15;
     
 }
 .container h1{ 
