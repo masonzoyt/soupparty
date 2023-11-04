@@ -3,7 +3,7 @@ html {
     background-size: cover;
     font-family: sans-serif;
     color: #4A454A;
-    display: flex;
+    display: flex; 
     flex-direction: column;
     justify-content: center; 
     align-items: center;
@@ -13,9 +13,9 @@ html {
 
 
 .container { /* what happens here overrides everything in the html {} one */
-    display: flex;
-    flex-direction: columns; 
-    align-items: center;
+    display: flex; /* hey line things up */
+    flex-direction: columns; /* ....in columns!! */
+    align-items: center; /* be in the middle */
     
 }
 .container div { /* what happens here only happens to the container divs */
@@ -29,7 +29,11 @@ html {
     font-size: 20px;
 }
 .container h1{ 
-    text-align: center; 
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center vertically */
+    justify-content: flex-start; /* Align text to the top */
+    height: 100vh; /* Optional: To make sure the container takes up the full viewport height */
     
 }
 .html div class= link{
