@@ -18,6 +18,8 @@ html {
 }
 .container div { /* TEXT */
   /*  display: flex;  */
+    margin-top: 3px;
+    
     
 }
 .container div p { /* NUMBERS */
@@ -29,7 +31,7 @@ html {
 .container h1{ 
    /* display: flex;
     flex-direction: column;  */
-    align-items: center; /* Center vertically */
+    text-align: center; /* Center vertically */
     justify-content: flex-start; /* Align text to the top */
     font-size: 30px;
     
