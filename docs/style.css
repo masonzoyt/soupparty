@@ -10,10 +10,12 @@ html {
 
 
 .countDownDate { /* what happens here overrides everything in the html {} one */ 
+    display: flex;
     
 }
 .countDownDate div { /* TEXT */
     margin-top: 3px;
+    flex-basis: 100px; 
     
     
 }
