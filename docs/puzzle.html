@@ -42,9 +42,9 @@ function areAnswersCorrect() {
 
 
 
-    const isAnswer1valid = allowedAnswers1.includes(userAnswer1);
-    const isAnswer2valid = allowedAnswers2.includes(userAnswer2);
-    const isAnswer3valid = allowedAnswers3.includes(userAnswer3);
+    const isAnswer1Valid = allowedAnswers1.includes(userAnswer1);
+    const isAnswer2Valid = allowedAnswers2.includes(userAnswer2);
+    const isAnswer3Valid = allowedAnswers3.includes(userAnswer3);
   
     return isAnswer1Valid && isAnswer2Valid && isAnswer3Valid;
 }
@@ -53,13 +53,13 @@ function hideSquare() {
     const allAnswersCorrect =();
   
     if (allAnswersCorrect) {
-        const square = getElementById("square");
+        const square = document.getElementById("square");
         square.style.display = "none";
       }
 }
 
   const submitButton = document.getElementById("submit-button");
-  submit-button.addEventListener("click", hideSquare);
+  submitButton.addEventListener("click", hideSquare);
 
       
 //    if (isAnswer1valid && isAnswer2valid && isAnswer3valid)
