@@ -48,6 +48,8 @@ function areAnswersCorrect() {
     return isAnswer1Valid && isAnswer2Valid && isAnswer3Valid;
 }
 
+const submitButton = document.getElementById("submit-button");
+  submitButton.addEventListener("click", hideSquare);
   
 function hideSquare() { 
       const allAnswersCorrect = areAnswersCorrect ();
@@ -55,16 +57,11 @@ function hideSquare() {
       if (allAnswersCorrect) {
           const square = document.getElementById("square");
           square.style.display = "none"; 
-
-      //show sucess button
-      const successButton = document.getElementById ("success-button");
-      successButton.style.display;
       
       }
 }
 
-const submitButton = document.getElementById("submit-button");
-submitButton.addEventListener("click", hideSquare);
+
   
 
     
