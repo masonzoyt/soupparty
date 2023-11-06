@@ -48,37 +48,24 @@ function areAnswersCorrect() {
     return isAnswer1Valid && isAnswer2Valid && isAnswer3Valid;
 }
 
-const submitButton = document.getElementById("submit-button");
-  submitButton.addEventListener("click", hideSquare);
+
   
 function hideSquare() { 
       const allAnswersCorrect = areAnswersCorrect ();
   
-      if (allAnswersCorrect) {
-          const square = document.getElementById("square");
-          square.style.display = "none"; 
+      if (allAnswersCorrect) { 
+
+          var result= "hello"; 
+     //     const square = document.getElementById("square");
+    //     square.style.display = "none; 
+          
       
       }
 }
 
+//const submitButton = document.getElementById("submit-button"); //submit button should only be visible after square disapears 
+//  submitButton.addEventListener("click", hideSquare);
 
-  
-
-    
-  
-
-      
-//    if (isAnswer1valid && isAnswer2valid && isAnswer3valid)
-//        function showSuccessButton(){ 
-
-//        function showSuccessButton(){
-//            const successButton= document.getElementById("success-button")
-//            successButton.style.display = "block"; 
-//            successButton.addEventListener("click, function"() {
-//              window.location.href = "almost.html";
-//            });
-//        }
-   
   
 
 </script>
