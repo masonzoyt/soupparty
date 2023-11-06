@@ -4,4 +4,9 @@ html{
     background-color: #2E7C9D;
 }
 
+.square {
+  height: 50px;
+  width: 50px;
+  background-color: #555;
+}
 
