@@ -35,29 +35,30 @@
 
 
 
-
- //   document.getElementById("submit-button").addEventListener("click", function() {  
-//       const userAnswer1 = document.getElementById("answer1").value.trim();
-  //      const userAnswer2 = document.getElementById("answer2").value.trim();
-    //    const userAnswer3 = document.getElementById("answer3").value.trim();
-
+function areAnswersCorrect() {
+    const userAnswer1 = document.getElementById("answer1").value.trim()
+    const userAnswer2 = document.getElementById("answer2").value.trim();
+    const userAnswer3 = document.getElementById("answer3").value.trim();
 
 
-//    const isAnswer1valid = allowedAnswers1.includes(userAnswer1);
-//    const isAnswer2valid = allowedAnswers2.includes(userAnswer2);
-//    const isAnswer3valid = allowedAnswers3.includes(userAnswer3);
 
-function hideSquare() {
-    const allAnswersCorrect = ;
+    const isAnswer1valid = allowedAnswers1.includes(userAnswer1);
+    const isAnswer2valid = allowedAnswers2.includes(userAnswer2);
+    const isAnswer3valid = allowedAnswers3.includes(userAnswer3);
+  
+    return isAnswer1Valid && isAnswer2Valid && isAnswer3Valid;
+}
+  
+function hideSquare() { 
+    const allAnswersCorrect =();
   
     if (allAnswersCorrect) {
         const square = getElementById("square");
-        square.style.display = none
+        square.style.display = "none";
       }
 }
 
-  const hideButton = document.getElementById("submit-button");
-
+  const submitButton = document.getElementById("submit-button");
   submit-button.addEventListener("click", hideSquare);
 
       
