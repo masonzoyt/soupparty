@@ -47,12 +47,19 @@
 //    const isAnswer2valid = allowedAnswers2.includes(userAnswer2);
 //    const isAnswer3valid = allowedAnswers3.includes(userAnswer3);
 
+function hideSquare() {
     const allAnswersCorrect = ;
-      if (allAnswersCorrect) {
+  
+    if (allAnswersCorrect) {
         const square = getElementById("square");
-
         square.style.display = none
       }
+}
+
+  const hideButton = document.getElementById("hideButton");
+
+  hideButton.addEventListener("click", hideSquare);
+
       
 //    if (isAnswer1valid && isAnswer2valid && isAnswer3valid)
 //        function showSuccessButton(){ 
