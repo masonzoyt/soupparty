@@ -24,7 +24,7 @@
 
 <button id="submit-button"> test my wits </button>
 <button id="success-button" style="display: none;"> continue </button>
-<div id = "square"> so squared out rn </div>
+<div id = "square"></div>
 
   
 <script> // this part is supposed to only allow submit if all questions are correct 
@@ -50,16 +50,17 @@ function areAnswersCorrect() {
 }
   
 function hideSquare() { 
-    const allAnswersCorrect =();
+      const allAnswersCorrect =();
   
-    if (allAnswersCorrect) {
-        const square = document.getElementById("square");
-        square.style.display = "none";
+      if (allAnswersCorrect) {
+          const square = document.getElementById("square");
+          square.style.display = "none";
+          const submitButton = document.getElementById("submit-button");
+          submitButton.addEventListener("click", hideSquare);
       }
 }
 
-  const submitButton = document.getElementById("submit-button");
-  submitButton.addEventListener("click", hideSquare);
+  
 
       
 //    if (isAnswer1valid && isAnswer2valid && isAnswer3valid)
