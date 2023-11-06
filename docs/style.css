@@ -15,7 +15,8 @@ html {
 }
 .countDownDate div { /* TEXT */
     margin-top: 3px;
-    flex-basis: 100px; 
+    flex-basis: 200px; 
+    text-align: center;
     
     
 }
@@ -23,6 +24,7 @@ html {
     color: #713362; 
     font-size: 60px;
     margin-bottom: -15px;
+    text-align: center;
     
 }
 .container h1{ 
