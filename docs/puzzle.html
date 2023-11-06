@@ -36,7 +36,7 @@
 
 
 
-function areAnswersCorrect() {
+function allAnswersCorrect() { //should i change this to be called allAnswersCorrect? 
     const userAnswer1 = document.getElementById("answer1").value.trim(); //trim= remove whitespace
     const userAnswer2 = document.getElementById("answer2").value.trim();
     const userAnswer3 = document.getElementById("answer3").value.trim();
@@ -45,13 +45,14 @@ function areAnswersCorrect() {
     const isAnswer2Valid = allowedAnswers2.includes(userAnswer2);
     const isAnswer3Valid = allowedAnswers3.includes(userAnswer3);
   
-    return isAnswer1Valid && isAnswer2Valid && isAnswer3Valid;
+    return isAnswer1Valid && isAnswer2Valid && isAnswer3Valid; //why is there return here? return is to spit out stuff based on areAnswersCorrect 
 }
+
 
 function areAnswersCorrect (); //an attempt at calling this function 
   
-function hideSquare() { 
-      const allAnswersCorrect = areAnswersCorrect (); 
+// function hideSquare() { 
+  const allAnswersCorrect = areAnswersCorrect (); //need to define all answers correct??
       
       if (allAnswersCorrect) { 
         console.log = ("hello"); 
