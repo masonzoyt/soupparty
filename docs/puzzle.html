@@ -24,6 +24,7 @@
 
 <button id="submit-button"> test my wits </button>
 <button id="success-button" style="display: none;"> continue </button>
+<div id = "square"> so squared out rn </div>
 
   
 <script> // this part is supposed to only allow submit if all questions are correct 
@@ -46,6 +47,13 @@
     const isAnswer2valid = allowedAnswers2.includes(userAnswer2);
     const isAnswer3valid = allowedAnswers3.includes(userAnswer3);
 
+    const allAnswersCorrect = ;
+      if (allAnswersCorrect) {
+        const square = getElementById("square");
+
+        square.style.display = none
+      }
+      
     if (isAnswer1valid && isAnswer2valid && isAnswer3valid)
         function showSuccessButton(){ 
 
