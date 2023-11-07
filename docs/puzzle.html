@@ -24,7 +24,7 @@
 
 <!-- <button id="submit-button"> test my wits </button> -->
 //<a href= "almost.html">
-  <button id="success-button"> continue </button>
+  <button id="success-button" style = "display: none;" > continue </button>
 </a> //
   
 <script> // this part is supposed to only allow submit if all questions are correct 
@@ -33,9 +33,10 @@
   var allowedAnswers2 = ["golden gate park", "Golden Gate Park", "Golden gate park", "ggp", "GGP"] //which answers are allowed. const (constant) b/c it will not change. 
   var allowedAnswers3 = ["powell station", "powell bart", "powell", "powell stop"] //which answers are allowed. const (constant) b/c it will not change. 
 
+  var userAnswer1, userAnswer2, userAnswer3;
+  var isAnswer1Valid, isAnswer2Valid, isAnswer3Valid;
 
-
-function allAnswersCorrect() { //should i change this to be called allAnswersCorrect? 
+ document.getElementById("submit-button").addEventListener("click", function() { 
     var userAnswer1 = document.getElementById("answer1").value.trim(); //trim= remove whitespace
     var userAnswer2 = document.getElementById("answer2").value.trim();
     var userAnswer3 = document.getElementById("answer3").value.trim(); 
@@ -46,27 +47,28 @@ function allAnswersCorrect() { //should i change this to be called allAnswersCor
   
  //why is there return here? return is to spit out stuff based on areAnswersCorrect 
 }
-
-var (isAnswer1Valid && isAnswer2Valid && isAnswer3Valid) = true; 
+ if (isAnswer1Valid && isAnswer2Valid && isAnswer3Valid) {
+        var successButton = document.getElementById("success-button");
+        successButton.style.display = "block";
+      } else {
+        alert("One or more answers are wrong.");
+      }
+    });
+//var (isAnswer1Valid && isAnswer2Valid && isAnswer3Valid) = true; 
   
-inputElement.addEventListener ("keypress", function (event) {
-  if (event.key === "Enter" || event.keyCode === 13) {
+//inputElement.addEventListener ("keypress", function (event) {
+//  if (event.key === "Enter" || event.keyCode === 13) {
   
-    if (isAnswer1Valid && isAnswer2Valid && isAnswer3Valid); { //"are all these correct?"
+//    if (isAnswer1Valid && isAnswer2Valid && isAnswer3Valid); { //"are all these correct?"
     
-            alert("hello");  //if yes,show this alert
-          } else { //if not
-            alert("one or more answers are wrong"); //show this alert
+//            alert("hello");  //if yes,show this alert
+//          } else { //if not
+//            alert("one or more answers are wrong"); //show this alert
       })
-     //     const square = document.getElementById("square");
-    //     square.style.display = "none; 
-          
       
       
 }
 
-//const submitButton = document.getElementById("submit-button"); //submit button should only be visible after square disapears 
-//  submitButton.addEventListener("click", hideSquare);
 
   
 
