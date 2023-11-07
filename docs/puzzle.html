@@ -23,12 +23,18 @@
 
 
 <!-- <button id="submit-button"> test my wits </button> -->
-//<a href= "almost.html">
+<a href= "almost.html">
   <button id="success-button" style = "display: none;" > continue </button>
-</a> //
+</a>
   
 <script> // this part is supposed to only allow submit if all questions are correct 
-
+var pressEnter {
+  inputElement.addEventListener ("keypress", function (event) {
+  if (event.key === "Enter" || event.keyCode === 13) {
+    }
+  }
+  
+  
   var allowedAnswers1 = ["alta plaza park", "alta plaza", "Alta Plaza", "Alta Plaza Park"] //which answers are allowed. const (constant) b/c it will not change. 
   var allowedAnswers2 = ["golden gate park", "Golden Gate Park", "Golden gate park", "ggp", "GGP"] //which answers are allowed. const (constant) b/c it will not change. 
   var allowedAnswers3 = ["powell station", "powell bart", "powell", "powell stop"] //which answers are allowed. const (constant) b/c it will not change. 
@@ -36,14 +42,14 @@
   var userAnswer1, userAnswer2, userAnswer3;
   var isAnswer1Valid, isAnswer2Valid, isAnswer3Valid;
 
- document.getElementById("submit-button").addEventListener("click", function() { 
+ document.getElementById("submit-button").addEventListener("click", pressEnter() { 
     var userAnswer1 = document.getElementById("answer1").value.trim(); //trim= remove whitespace
     var userAnswer2 = document.getElementById("answer2").value.trim();
     var userAnswer3 = document.getElementById("answer3").value.trim(); 
 
-    boolean (isAnswer1Valid = allowedAnswers1.includes(userAnswer1)); // make this a true/false boolion 
-    boolean (isAnswer2Valid = allowedAnswers2.includes(userAnswer2)); 
-    boolean (isAnswer3Valid = allowedAnswers3.includes(userAnswer3));
+    isAnswer1Valid = allowedAnswers1.includes(userAnswer1); // make this a true/false boolion 
+    isAnswer2Valid = allowedAnswers2.includes(userAnswer2); 
+    isAnswer3Valid = allowedAnswers3.includes(userAnswer3);
   
  //why is there return here? return is to spit out stuff based on areAnswersCorrect 
 }
@@ -51,13 +57,13 @@
         var successButton = document.getElementById("success-button");
         successButton.style.display = "block";
       } else {
-        alert("One or more answers are wrong.");
+        alert("One or more answers are wrong."); 
       }
     });
 //var (isAnswer1Valid && isAnswer2Valid && isAnswer3Valid) = true; 
   
-//inputElement.addEventListener ("keypress", function (event) {
-//  if (event.key === "Enter" || event.keyCode === 13) {
+inputElement.addEventListener ("keypress", function (event) {
+  if (event.key === "Enter" || event.keyCode === 13) { 
   
 //    if (isAnswer1Valid && isAnswer2Valid && isAnswer3Valid); { //"are all these correct?"
     
