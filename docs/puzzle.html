@@ -34,15 +34,14 @@ var pressEnter {
     }
   }
   
-  
   var allowedAnswers1 = ["alta plaza park", "alta plaza", "Alta Plaza", "Alta Plaza Park"] //which answers are allowed. const (constant) b/c it will not change. 
   var allowedAnswers2 = ["golden gate park", "Golden Gate Park", "Golden gate park", "ggp", "GGP"] //which answers are allowed. const (constant) b/c it will not change. 
   var allowedAnswers3 = ["powell station", "powell bart", "powell", "powell stop"] //which answers are allowed. const (constant) b/c it will not change. 
 
-  var userAnswer1, userAnswer2, userAnswer3;
-  var isAnswer1Valid, isAnswer2Valid, isAnswer3Valid;
+  //var userAnswer1, userAnswer2, userAnswer3; //what do these do??
+  //var isAnswer1Valid, isAnswer2Valid, isAnswer3Valid;
 
- document.getElementById("submit-button").addEventListener("click", pressEnter() { 
+ document.getElementById("submit-button").addEventListener(pressEnter() { 
     var userAnswer1 = document.getElementById("answer1").value.trim(); //trim= remove whitespace
     var userAnswer2 = document.getElementById("answer2").value.trim();
     var userAnswer3 = document.getElementById("answer3").value.trim(); 
@@ -54,10 +53,12 @@ var pressEnter {
  //why is there return here? return is to spit out stuff based on areAnswersCorrect 
 }
  if (isAnswer1Valid && isAnswer2Valid && isAnswer3Valid) {
-        var successButton = document.getElementById("success-button");
-        successButton.style.display = "block";
+       var answers = true;
+          var successButton = document.getElementById("success-button");
+          successButton.style.display = "block";
       } else {
-        alert("One or more answers are wrong."); 
+        var answers = false;
+          alert("one or more answers are wrong."); 
       }
     });
 //var (isAnswer1Valid && isAnswer2Valid && isAnswer3Valid) = true; 
