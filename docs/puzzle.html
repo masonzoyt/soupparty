@@ -30,24 +30,26 @@
   
 <script> // this part is supposed to only allow submit if all questions are correct 
 
-  const allowedAnswers1 = ["alta plaza park", "alta plaza", "Alta Plaza", "Alta Plaza Park"] //which answers are allowed. const (constant) b/c it will not change. 
-  const allowedAnswers2 = ["golden gate park", "Golden Gate Park", "Golden gate park", "ggp", "GGP"] //which answers are allowed. const (constant) b/c it will not change. 
-  const allowedAnswers3 = ["powell station", "powell bart", "powell", "powell stop"] //which answers are allowed. const (constant) b/c it will not change. 
+  var allowedAnswers1 = ["alta plaza park", "alta plaza", "Alta Plaza", "Alta Plaza Park"] //which answers are allowed. const (constant) b/c it will not change. 
+  var allowedAnswers2 = ["golden gate park", "Golden Gate Park", "Golden gate park", "ggp", "GGP"] //which answers are allowed. const (constant) b/c it will not change. 
+  var allowedAnswers3 = ["powell station", "powell bart", "powell", "powell stop"] //which answers are allowed. const (constant) b/c it will not change. 
 
 
 
 function allAnswersCorrect() { //should i change this to be called allAnswersCorrect? 
-    const userAnswer1 = document.getElementById("answer1").value.trim(); //trim= remove whitespace
-    const userAnswer2 = document.getElementById("answer2").value.trim();
-    const userAnswer3 = document.getElementById("answer3").value.trim(); 
+    var userAnswer1 = document.getElementById("answer1").value.trim(); //trim= remove whitespace
+    var userAnswer2 = document.getElementById("answer2").value.trim();
+    var userAnswer3 = document.getElementById("answer3").value.trim(); 
 
-    const isAnswer1Valid = allowedAnswers1.includes(userAnswer1); // make this a true/false boolion 
-    const isAnswer2Valid = allowedAnswers2.includes(userAnswer2); 
-    const isAnswer3Valid = allowedAnswers3.includes(userAnswer3);
+    boolean (isAnswer1Valid = allowedAnswers1.includes(userAnswer1)); // make this a true/false boolion 
+    boolean (isAnswer2Valid = allowedAnswers2.includes(userAnswer2)); 
+    boolean (isAnswer3Valid = allowedAnswers3.includes(userAnswer3));
   
     return isAnswer1Valid && isAnswer2Valid && isAnswer3Valid; //why is there return here? return is to spit out stuff based on areAnswersCorrect 
 }
 
+  if userAnswer1 = true 
+    alert("yay")
 
 
 function areAllAnswersCorrect (); //an attempt at calling this function 
