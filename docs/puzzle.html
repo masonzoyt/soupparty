@@ -23,10 +23,10 @@
 
 
 <!-- <button id="submit-button"> test my wits </button> -->
-<a href= "almost.html">
-  <button id="success-button" style = "display: none;" > continue </button>
-</a>
+<!-- <a href= "almost.html"> -->
   
+<button id="success-button" style = "display: none;" > continue </button>
+
 <script> // this part is supposed to only allow submit if all questions are correct 
 var pressEnter {
   inputElement.addEventListener ("keypress", function (event) {
@@ -41,7 +41,8 @@ var pressEnter {
   //var userAnswer1, userAnswer2, userAnswer3; //what do these do??
   //var isAnswer1Valid, isAnswer2Valid, isAnswer3Valid;
 
- document.getElementById("submit-button").addEventListener(pressEnter() { 
+ document.getElementById("submit-button").addEventListener(pressEnter() {
+  function areAllAnswersCorrect(){
     var userAnswer1 = document.getElementById("answer1").value.trim(); //trim= remove whitespace
     var userAnswer2 = document.getElementById("answer2").value.trim();
     var userAnswer3 = document.getElementById("answer3").value.trim(); 
@@ -49,26 +50,25 @@ var pressEnter {
     Boolean isAnswer1Valid = allowedAnswers1.includes(userAnswer1); // make this a true/false booleon 
     Boolean isAnswer2Valid = allowedAnswers2.includes(userAnswer2); 
     Boolean isAnswer3Valid = allowedAnswers3.includes(userAnswer3);
-  
- //why is there return here? return is to spit out stuff based on areAnswersCorrect 
+
+    
 }
 
 
 inputElement.addEventListener ("keypress", function (event) {
   if (event.key === "Enter" || event.keyCode === 13) { 
     
-    if (isAnswer1Valid && isAnswer2Valid && isAnswer3Valid) {
+    if (areAllAnswersCorrect()) {
          var answers = true;
             var successButton = document.getElementById("success-button");
             successButton.style.display = "block";
         } else {
           var answers = false;
             alert("one or more answers are wrong."); 
+           }
         }
     });
 
-}
-  }
 //var (isAnswer1Valid && isAnswer2Valid && isAnswer3Valid) = true; 
   
 
