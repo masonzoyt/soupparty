@@ -38,19 +38,18 @@ var pressEnter {
   const allowedAnswers2 = ["golden gate park", "Golden Gate Park", "Golden gate park", "ggp", "GGP"] //which answers are allowed. const (constant) b/c it will not change. 
   const allowedAnswers3 = ["powell station", "powell bart", "powell", "powell stop"] //which answers are allowed. const (constant) b/c it will not change. 
 
-  //var userAnswer1, userAnswer2, userAnswer3; //what do these do??
-  //var isAnswer1Valid, isAnswer2Valid, isAnswer3Valid;
-
  document.getElementById("submit-button").addEventListener(pressEnter() {
+   
   function areAllAnswersCorrect(){
     var userAnswer1 = document.getElementById("answer1").value.trim(); //trim= remove whitespace
     var userAnswer2 = document.getElementById("answer2").value.trim();
     var userAnswer3 = document.getElementById("answer3").value.trim(); 
 
   Boolean {
-    isAnswer1Valid = allowedAnswers1.includes(userAnswer1); 
-    isAnswer2Valid = allowedAnswers2.includes(userAnswer2); 
-    isAnswer3Valid = allowedAnswers3.includes(userAnswer3);
+    var isAnswer1Valid = allowedAnswers1.includes(userAnswer1); 
+    var isAnswer2Valid = allowedAnswers2.includes(userAnswer2); 
+    var isAnswer3Valid = allowedAnswers3.includes(userAnswer3);
+    } 
   }
 }
 
