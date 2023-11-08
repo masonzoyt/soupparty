@@ -45,17 +45,12 @@ var pressEnter {
     var userAnswer2 = document.getElementById("answer2").value.trim();
     var userAnswer3 = document.getElementById("answer3").value.trim(); 
 
-  Boolean {
+  
     var isAnswer1Valid = allowedAnswers1.includes(userAnswer1); 
     var isAnswer2Valid = allowedAnswers2.includes(userAnswer2); 
     var isAnswer3Valid = allowedAnswers3.includes(userAnswer3);
-    } 
   }
 }
-
-
-inputElement.addEventListener ("keypress", function (event) {  //if u press enter 
-  if (event.key === "Enter" || event.keyCode === 13) { //nerd shit
     
     if (areAllAnswersCorrect()) {
          var answers = true;
