@@ -34,13 +34,13 @@ var pressEnter {
     }
   }
   
-  const allowedAnswers1 = ["alta plaza park", "alta plaza", "Alta Plaza", "Alta Plaza Park"] //which answers are allowed. const (constant) b/c it will not change. 
-  const allowedAnswers2 = ["golden gate park", "Golden Gate Park", "Golden gate park", "ggp", "GGP"] //which answers are allowed. const (constant) b/c it will not change. 
-  const allowedAnswers3 = ["powell station", "powell bart", "powell", "powell stop"] //which answers are allowed. const (constant) b/c it will not change. 
+  const allowedAnswers1 = ["alta plaza"] //which answers are allowed. const (constant) b/c it will not change. 
+  const allowedAnswers2 = ["ggp"] //which answers are allowed. const (constant) b/c it will not change. 
+  const allowedAnswers3 = ["powell"] //which answers are allowed. const (constant) b/c it will not change. 
 
  document.getElementById("submit-button").addEventListener(pressEnter() {
    
-  function areAllAnswersCorrect(){
+  areAllAnswersCorrect(){
     var userAnswer1 = document.getElementById("answer1").value.trim(); //trim= remove whitespace
     var userAnswer2 = document.getElementById("answer2").value.trim();
     var userAnswer3 = document.getElementById("answer3").value.trim(); 
@@ -54,8 +54,9 @@ var pressEnter {
     
     if (areAllAnswersCorrect()) {
          var answers = true;
-            var successButton = document.getElementById("success-button");
-          successButton.style.display = "block";
+            alert("yay");
+            //var successButton = document.getElementById("success-button");
+         // successButton.style.display = "block";
         } else {
           var answers = false;
             alert("one or more answers are wrong."); 
