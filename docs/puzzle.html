@@ -52,19 +52,26 @@ var pressEnter {
   
  //why is there return here? return is to spit out stuff based on areAnswersCorrect 
 }
- if (isAnswer1Valid && isAnswer2Valid && isAnswer3Valid) {
-       var answers = true;
-          var successButton = document.getElementById("success-button");
-          successButton.style.display = "block";
-      } else {
-        var answers = false;
-          alert("one or more answers are wrong."); 
-      }
-    });
-//var (isAnswer1Valid && isAnswer2Valid && isAnswer3Valid) = true; 
-  
+
+
 inputElement.addEventListener ("keypress", function (event) {
   if (event.key === "Enter" || event.keyCode === 13) { 
+    
+    if (isAnswer1Valid && isAnswer2Valid && isAnswer3Valid) {
+         var answers = true;
+            var successButton = document.getElementById("success-button");
+            successButton.style.display = "block";
+        } else {
+          var answers = false;
+            alert("one or more answers are wrong."); 
+        }
+    });
+
+}
+  }
+//var (isAnswer1Valid && isAnswer2Valid && isAnswer3Valid) = true; 
+  
+
   
 //    if (isAnswer1Valid && isAnswer2Valid && isAnswer3Valid); { //"are all these correct?"
     
