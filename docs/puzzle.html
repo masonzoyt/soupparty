@@ -34,9 +34,9 @@ var pressEnter {
     }
   }
   
-  var allowedAnswers1 = ["alta plaza park", "alta plaza", "Alta Plaza", "Alta Plaza Park"] //which answers are allowed. const (constant) b/c it will not change. 
-  var allowedAnswers2 = ["golden gate park", "Golden Gate Park", "Golden gate park", "ggp", "GGP"] //which answers are allowed. const (constant) b/c it will not change. 
-  var allowedAnswers3 = ["powell station", "powell bart", "powell", "powell stop"] //which answers are allowed. const (constant) b/c it will not change. 
+  const allowedAnswers1 = ["alta plaza park", "alta plaza", "Alta Plaza", "Alta Plaza Park"] //which answers are allowed. const (constant) b/c it will not change. 
+  const allowedAnswers2 = ["golden gate park", "Golden Gate Park", "Golden gate park", "ggp", "GGP"] //which answers are allowed. const (constant) b/c it will not change. 
+  const allowedAnswers3 = ["powell station", "powell bart", "powell", "powell stop"] //which answers are allowed. const (constant) b/c it will not change. 
 
   //var userAnswer1, userAnswer2, userAnswer3; //what do these do??
   //var isAnswer1Valid, isAnswer2Valid, isAnswer3Valid;
@@ -47,21 +47,21 @@ var pressEnter {
     var userAnswer2 = document.getElementById("answer2").value.trim();
     var userAnswer3 = document.getElementById("answer3").value.trim(); 
 
-    Boolean isAnswer1Valid = allowedAnswers1.includes(userAnswer1); // make this a true/false booleon 
-    Boolean isAnswer2Valid = allowedAnswers2.includes(userAnswer2); 
-    Boolean isAnswer3Valid = allowedAnswers3.includes(userAnswer3);
-
-    
+  Boolean {
+    isAnswer1Valid = allowedAnswers1.includes(userAnswer1); 
+    isAnswer2Valid = allowedAnswers2.includes(userAnswer2); 
+    isAnswer3Valid = allowedAnswers3.includes(userAnswer3);
+  }
 }
 
 
-inputElement.addEventListener ("keypress", function (event) {
-  if (event.key === "Enter" || event.keyCode === 13) { 
+inputElement.addEventListener ("keypress", function (event) {  //if u press enter 
+  if (event.key === "Enter" || event.keyCode === 13) { //nerd shit
     
     if (areAllAnswersCorrect()) {
          var answers = true;
             var successButton = document.getElementById("success-button");
-            successButton.style.display = "block";
+          successButton.style.display = "block";
         } else {
           var answers = false;
             alert("one or more answers are wrong."); 
@@ -69,19 +69,7 @@ inputElement.addEventListener ("keypress", function (event) {
         }
     });
 
-//var (isAnswer1Valid && isAnswer2Valid && isAnswer3Valid) = true; 
-  
 
-  
-//    if (isAnswer1Valid && isAnswer2Valid && isAnswer3Valid); { //"are all these correct?"
-    
-//            alert("hello");  //if yes,show this alert
-//          } else { //if not
-//            alert("one or more answers are wrong"); //show this alert
-      })
-      
-      
-}
 
 
   
