@@ -32,6 +32,19 @@
   
   inputElement.addEventListener ("keypress", function (event) {
   if (event.key === "Enter" || event.keyCode === 13) {
+
+      function areAllAnswersCorrect(){
+        var userAnswer1 = document.getElementById("answer1").value.trim(); //trim= remove whitespace
+        var userAnswer2 = document.getElementById("answer2").value.trim();
+        var userAnswer3 = document.getElementById("answer3").value.trim(); 
+
+  
+        var isAnswer1Valid = allowedAnswers1.includes(userAnswer1); 
+        var isAnswer2Valid = allowedAnswers2.includes(userAnswer2); 
+        var isAnswer3Valid = allowedAnswers3.includes(userAnswer3);
+
+      return isAnswer1Valid && isAnswer2Valid && isAnswer3Valid;
+  }
     alert("test");
     }
   }
@@ -40,20 +53,10 @@
   const allowedAnswers2 = ["ggp"] //which answers are allowed. const (constant) b/c it will not change. 
   const allowedAnswers3 = ["powell"] //which answers are allowed. const (constant) b/c it will not change. 
 
- document.getElementById("submit-button").addEventListener(pressEnter() {
+ // document.getElementById("submit-button").addEventListener(pressEnter() {
    
-  areAllAnswersCorrect(){
-    var userAnswer1 = document.getElementById("answer1").value.trim(); //trim= remove whitespace
-    var userAnswer2 = document.getElementById("answer2").value.trim();
-    var userAnswer3 = document.getElementById("answer3").value.trim(); 
-
   
-    var isAnswer1Valid = allowedAnswers1.includes(userAnswer1); 
-    var isAnswer2Valid = allowedAnswers2.includes(userAnswer2); 
-    var isAnswer3Valid = allowedAnswers3.includes(userAnswer3);
-
-    return isAnswer1Valid && isAnswer2Valid && isAnswer3Valid;
-  }
+  
 
     if (areAllAnswersCorrect()) {
          var answers = true;
