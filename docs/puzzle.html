@@ -39,7 +39,7 @@ var isAnswer1Valid = false;
 var isAnswer2Valid = false; 
 var isAnswer3Valid = false; 
 
-var areAllAnswersCorrect = false; 
+var areAllAnswersCorrect = false; //this is also automatically false 
 
   inputElement = addEventListener ("keypress", function (event) { 
     if (event.key === "Enter" || event.keyCode === 13) { 
@@ -53,8 +53,8 @@ var areAllAnswersCorrect = false;
           isAnswer2Valid = allowedAnswers2.includes(userAnswer2); 
           isAnswer3Valid = allowedAnswers3.includes(userAnswer3);
   
-        if (isAnswer1Valid && isAnswer2Valid && isAnswer3Valid){
-          areAllAnswersCorrect = true; 
+        if (isAnswer1Valid && isAnswer2Valid && isAnswer3Valid){ 
+          areAllAnswersCorrect = true; //areallasnwcorrect is only fr if theyre all correcet together
         }
       alert("test");
       }
