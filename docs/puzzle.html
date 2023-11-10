@@ -31,24 +31,35 @@
 <script> // this part is supposed to only allow submit if all questions are correct 
 var inputElement = document.getElementById("inputElement");
 
+var userAnswer1 = false; //user answer is automatically false
+var userAnswer2 = false;
+var userAnswer3 = false;
+
+var isAnswer1Valid = false; 
+var isAnswer2Valid = false; 
+var isAnswer3Valid = false; 
+
+var areAllAnswersCorrect = false; 
+
   inputElement = addEventListener ("keypress", function (event) { 
-  if (event.key === "Enter" || event.keyCode === 13) {
-
-      function areAllAnswersCorrect(){
-        var userAnswer1 = document.getElementById("answer1").value.trim(); //trim= remove whitespace
-        var userAnswer2 = document.getElementById("answer2").value.trim();
-        var userAnswer3 = document.getElementById("answer3").value.trim(); 
-
-        
-        var isAnswer1Valid = allowedAnswers1.includes(userAnswer1); 
-        var isAnswer2Valid = allowedAnswers2.includes(userAnswer2); 
-        var isAnswer3Valid = allowedAnswers3.includes(userAnswer3);
-
-      return isAnswer1Valid && isAnswer2Valid && isAnswer3Valid;
-  }
-    alert("test");
+    if (event.key === "Enter" || event.keyCode === 13) { 
+  
+          userAnswer1 = document.getElementById("answer1").value.trim(); //trim= remove whitespace
+          userAnswer2 = document.getElementById("answer2").value.trim();
+          userAnswer3 = document.getElementById("answer3").value.trim(); 
+  
+          
+          isAnswer1Valid = allowedAnswers1.includes(userAnswer1); 
+          isAnswer2Valid = allowedAnswers2.includes(userAnswer2); 
+          isAnswer3Valid = allowedAnswers3.includes(userAnswer3);
+  
+        if (isAnswer1Valid && isAnswer2Valid && isAnswer3Valid){
+          areAllAnswersCorrect = true; 
+        }
+      alert("test");
+      }
     }
-  });
+  );
   
   const allowedAnswers1 = ["alta plaza"] //which answers are allowed. const (constant) b/c it will not change. 
   const allowedAnswers2 = ["ggp"] //which answers are allowed. const (constant) b/c it will not change. 
