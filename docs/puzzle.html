@@ -29,9 +29,9 @@
 <button id="success-button" style = "display: none;" > continue </button>
 
 <script> // this part is supposed to only allow submit if all questions are correct 
-document.getElementById("inputElement")
+var inputElement = document.getElementById("inputElement");
 
-  inputElement.addEventListener ("keypress", function (event) {
+  inputElement.addEventListener ("keypress", function (event) { 
   if (event.key === "Enter" || event.keyCode === 13) {
 
       function areAllAnswersCorrect(){
@@ -39,7 +39,7 @@ document.getElementById("inputElement")
         var userAnswer2 = document.getElementById("answer2").value.trim();
         var userAnswer3 = document.getElementById("answer3").value.trim(); 
 
-  
+        
         var isAnswer1Valid = allowedAnswers1.includes(userAnswer1); 
         var isAnswer2Valid = allowedAnswers2.includes(userAnswer2); 
         var isAnswer3Valid = allowedAnswers3.includes(userAnswer3);
