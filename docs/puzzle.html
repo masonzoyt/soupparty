@@ -54,20 +54,20 @@ var areAllAnswersCorrect = false; //this is also automatically false
        //   isAnswer2Valid = allowedAnswer2.includes(userAnswer2); 
        //   isAnswer3Valid = allowedAnswer3.includes(userAnswer3);
       
-           if (userAnswer1 = "alta plaza"){
+           if (userAnswer1 == "alta plaza"){
        //      userAnswer1 = allowedAnswer1; 
              var userAnswer1 = true; 
            }
-          if (userAnswer2 = "ggp"){
+          if (userAnswer2 == "ggp"){
             var userAnswer2 = true;  
           }
-          if (userAnswer3 = "powell"){
+          if (userAnswer3 == "powell"){
             var userAnswer3 = true; 
           }
 
         
       
-        if (userAnswer1 = true && userAnswer2 = true && userAnswer3 = true) { 
+        if (userAnswer1 && userAnswer2 && userAnswer3) { 
           var areAllAnswersCorrect = true; //areallasnwcorrect is only fr if theyre all correcet together
         }
    //   alert("test");
