@@ -41,23 +41,24 @@ var isAnswer3Valid = false;
 
 var areAllAnswersCorrect = false; //this is also automatically false 
 
-const allowedAnswers1 = ["alta plaza"] //which answers are allowed. const (constant) b/c it will not change. 
-const allowedAnswers2 = ["ggp"] //which answers are allowed. const (constant) b/c it will not change. 
-const allowedAnswers3 = ["powell"] //which answers are allowed. const (constant) b/c it will not change. 
 
 
   inputElement = addEventListener ("keypress", function (event) { 
     if (event.key === "Enter" || event.keyCode === 13) { 
-  
+
+          const allowedAnswer1 = ["alta plaza"] 
+          const allowedAnswer2 = ["ggp"] 
+          const allowedAnswer3 = ["powell"]
+      
           userAnswer1 = document.getElementById("answer1").value.trim(); //trim= remove whitespace
-          userAnswer2 = document.getElementById("answer2").value.trim();
+          userAnswer2 = document.getElementById("answer2").value.trim(); 
           userAnswer3 = document.getElementById("answer3").value.trim(); 
-  
           
           isAnswer1Valid = allowedAnswers1.includes(userAnswer1); 
           isAnswer2Valid = allowedAnswers2.includes(userAnswer2); 
           isAnswer3Valid = allowedAnswers3.includes(userAnswer3);
-  
+
+      
         if (isAnswer1Valid && isAnswer2Valid && isAnswer3Valid){ 
           areAllAnswersCorrect = true; //areallasnwcorrect is only fr if theyre all correcet together
         }
@@ -72,10 +73,7 @@ const allowedAnswers3 = ["powell"] //which answers are allowed. const (constant)
 
  // document.getElementById("submit-button").addEventListener(pressEnter() {
    
-  
-  
-
-    if (areAllAnswersCorrect) {
+     if (areAllAnswersCorrect) {
          var answers = true;
             alert("yay");
             //var successButton = document.getElementById("success-button");
