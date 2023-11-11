@@ -50,11 +50,8 @@ var areAllAnswersCorrect = false; //this is also automatically false
           userAnswer2 = document.getElementById("answer2").value.trim(); 
           userAnswer3 = document.getElementById("answer3").value.trim(); 
           
-          isAnswer1Valid = allowedAnswer1.includes(userAnswer1); 
-          isAnswer2Valid = allowedAnswer2.includes(userAnswer2); 
-          isAnswer3Valid = allowedAnswer3.includes(userAnswer3);
-
            if (userAnswer1 = "alta plaza"){
+             userAnswer1 = allowedAnswer1; 
              var userAnswer1 = true; 
            }
           if (userAnswer2 = "ggp"){
@@ -63,6 +60,11 @@ var areAllAnswersCorrect = false; //this is also automatically false
           if (userAnswer3 = "powell"){
             var userAnswer3 = true; 
           }
+
+        isAnswer1Valid = allowedAnswer1.includes(userAnswer1); 
+          isAnswer2Valid = allowedAnswer2.includes(userAnswer2); 
+          isAnswer3Valid = allowedAnswer3.includes(userAnswer3);
+      
         if (isAnswer1Valid && isAnswer2Valid && isAnswer3Valid){ 
           areAllAnswersCorrect = true; //areallasnwcorrect is only fr if theyre all correcet together
         }
