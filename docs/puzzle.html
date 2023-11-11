@@ -45,10 +45,6 @@ var areAllAnswersCorrect = false; //this is also automatically false
 
   inputElement = addEventListener ("keypress", function (event) { 
     if (event.key === "Enter" || event.keyCode === 13) { 
-
-          const allowedAnswer1 = ["alta plaza"] 
-          const allowedAnswer2 = ["ggp"] 
-          const allowedAnswer3 = ["powell"]
       
           userAnswer1 = document.getElementById("answer1").value.trim(); //trim= remove whitespace
           userAnswer2 = document.getElementById("answer2").value.trim(); 
@@ -58,6 +54,14 @@ var areAllAnswersCorrect = false; //this is also automatically false
           isAnswer2Valid = allowedAnswer2.includes(userAnswer2); 
           isAnswer3Valid = allowedAnswer3.includes(userAnswer3);
 
+          if userAnswer1 = ["alta plaza"]
+            var userAnswer1 = true; 
+
+          if userAnswer2 = ["ggp"] 
+            var userAnswer2 = true; 
+
+          if userAnswer3 = ["powell"]
+            var userAnswer3 = true; 
       
         if (isAnswer1Valid && isAnswer2Valid && isAnswer3Valid){ 
           areAllAnswersCorrect = true; //areallasnwcorrect is only fr if theyre all correcet together
