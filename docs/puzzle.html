@@ -15,7 +15,7 @@
       <div>
         <label for="answer1">jackson & steiner?</label>
         <input type="text" id="answer1" required>
-        <span id="status1" style="color:red">status</span> <!-- status! yay! -->
+        <span id="status1" style="color:red"></span> 
       </div>
       <div>
         <label for="answer2">fredrick & stanyan?</label> 
@@ -57,7 +57,7 @@
         if (userAnswer1 == "alta plaza") {
           // userAnswer1 = allowedAnswer1; 
           userAnswer1_correct = true;
-          document.getElementById("status1").style.color = "green";
+          document.getElementById("status1").textContent = "37";
         }
         if (userAnswer2 == "ggp") {
           userAnswer2_correct = true; //now its more specific
