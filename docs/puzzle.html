@@ -1,100 +1,86 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <link rel="stylesheet" href="style2.css">
 </head>
+
 <body>
-  <h1> soup party: see you there? </h1> 
-  <p> input your answers. there is a correct answer to each question. </p> 
+  <h1> soup party: see you there? </h1>
+  <p> input your answers. there is a correct answer to each question. </p>
 
 
-    <div class = "question-container">
-      <label = "answers">
-          <label for="answer1">jackson & steiner?</label>
-          <input type="text" id="answer1" required> 
-
-          <label for="answer2">fredrick & stanyan?</label>
-          <input type="text" id="answer2" required> 
-    
-          <label for="answer3">market & fifth? </label>
-         <input type="text" id="answer3" required> 
-      </label>
-    </div>
- 
-
-
-<!-- <button id="submit-button"> test my wits </button> -->
-<!-- <a href= "almost.html"> -->
-  
-<button id="success-button" style = "display: none;" > continue </button>
-
-<script> // this part is supposed to only allow submit if all questions are correct 
-var inputElement = document.getElementById("inputElement");
-
-var userAnswer1 = false; //user answer is automatically false
-var userAnswer2 = false;
-var userAnswer3 = false;
-
-//var isAnswer1Valid = false; 
-//var isAnswer2Valid = false; 
-//var isAnswer3Valid = false; 
-
-var areAllAnswersCorrect = false; //this is also automatically false 
+  <div id="answerTarget" class="question-container"> <!--- what does putting them in divs do? -->
+    <label="answers">
+      <div>
+        <label for="answer1">jackson & steiner?</label>
+        <input type="text" id="answer1" required>
+        <span id="status1" style="color:red">status</span> <!-- status! yay! -->
+      </div>
+      <div>
+        <label for="answer2">fredrick & stanyan?</label> 
+        <input type="text" id="answer2" required>
+        <span id="status2" style="color:red">status</span>
+      </div>
+      <div>
+        <label for="answer3">market & fifth? </label>
+        <input type="text" id="answer3" required>
+        <span id="status3" style="color:red">status</span>
+      </div>
+    </label>
+  </div>
 
 
 
-  inputElement = addEventListener ("keypress", function (event) { 
-    if (event.key === "Enter" || event.keyCode === 13) { 
-      
-          userAnswer1 = document.getElementById("answer1").value.trim(); //trim= remove whitespace
-          userAnswer2 = document.getElementById("answer2").value.trim(); 
-          userAnswer3 = document.getElementById("answer3").value.trim(); 
+  <!-- <button id="submit-button"> test my wits </button> -->
+  <!-- <a href= "almost.html"> -->
 
-       //   isAnswer1Valid = allowedAnswer1.includes(userAnswer1); 
-       //   isAnswer2Valid = allowedAnswer2.includes(userAnswer2); 
-       //   isAnswer3Valid = allowedAnswer3.includes(userAnswer3);
-      
-           if (userAnswer1 == "alta plaza"){
-       //      userAnswer1 = allowedAnswer1; 
-             var userAnswer1 = true; 
-           }
-          if (userAnswer2 == "ggp"){
-            var userAnswer2 = true;  
-          }
-          if (userAnswer3 == "powell"){
-            var userAnswer3 = true; 
-          }
+  <button id="success-button" style="display: none;"> continue </button>
 
-        
-      
-        if (userAnswer1 && userAnswer2 && userAnswer3) { 
-          var areAllAnswersCorrect = true; //areallasnwcorrect is only fr if theyre all correcet together
+  <script> // this part is supposed to only allow submit if all questions are correct 
+    var inputElement = document.getElementById("answerTarget");
+
+    var userAnswer1_correct = false; //user answer is automatically false
+    var userAnswer2_correct = false; //by making the correct answer its own variable, (what happens??)
+    var userAnswer3_correct = false;
+
+
+    var areAllAnswersCorrect = false; //this is also automatically false 
+
+    inputElement.addEventListener("keypress", function (event) {
+      if (event.key === "Enter" || event.keyCode === 13) {
+
+        userAnswer1 = document.getElementById("answer1").value.trim(); //trim= remove whitespace
+        userAnswer2 = document.getElementById("answer2").value.trim();
+        userAnswer3 = document.getElementById("answer3").value.trim();
+
+        if (userAnswer1 == "alta plaza") {
+          // userAnswer1 = allowedAnswer1; 
+          userAnswer1_correct = true;
+          document.getElementById("status1").style.color = "green";
         }
-   //   alert("test");
+        if (userAnswer2 == "ggp") {
+          userAnswer2_correct = true; //now its more specific
+          document.getElementById("status2").style.color = "green";
+        }
+        if (userAnswer3 == "powell") {
+          userAnswer3_correct = true;
+          document.getElementById("status3").style.color = "green";
+        }
+
+        if (userAnswer1_correct && userAnswer2_correct && userAnswer3_correct) {
+          areAllAnswersCorrect = true; // only when they are all right
+        }
+
+        if (areAllAnswersCorrect) {
+          alert("yay");
+        }
       }
     }
-  );
-   
-     if (areAllAnswersCorrect) {
-         var answers = true;
-            alert("yay");
-            //var successButton = document.getElementById("success-button");
-         // successButton.style.display = "block";
-        } else {
-          var answers = false;
-            alert("one or more answers are wrong."); 
-           }
-        
-    
-   
-    ;
-
-
-
-
-  
-
-</script>
+    );
+  </script>
 
 </body>
+
 </html>
+
