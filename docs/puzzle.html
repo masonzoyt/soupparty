@@ -15,22 +15,22 @@
       <div>
         <label for="answer1">jackson & steiner?</label>
         <input type="text" id="answer1" required>
-        <span id="status1" style="color:gray"></span> 
+        <span id="status1" style="color:black"></span> 
       </div>
       <div>
         <label for="answer2">fredrick & stanyan?</label> 
         <input type="text" id="answer2" required>
-        <span id="status2" style="color:blue">status</span>
+        <span id="status2" style="color:black">status</span>
       </div>
       <div>
         <label for="answer3">market & fifth? </label>
         <input type="text" id="answer3" required>
-        <span id="status3" style="color:blue">status</span>
+        <span id="status3" style="color:black">status</span>
       </div>
       <div>
-        <label for="answer "></label>
+        <label for="answer4">dolores & nineteenth?</label>
         <input type="text" id="answer " required>
-        <span id="status " style="color:blue"></span> 
+        <span id="status " style="color:black"></span> 
       </div>
     </label>
   </div>
@@ -73,7 +73,12 @@
           document.getElementById("status3").textContent = "5";
         }
 
-        if (userAnswer1_correct && userAnswer2_correct && userAnswer3_correct) {
+        if (userAnswer4 == "dolores park") {
+          userAnswer3_correct = true;
+          document.getElementById("status4").textContent = "5";
+        }
+
+        if (userAnswer1_correct && userAnswer2_correct && userAnswer3_correct && userAnswer4_corect) {
           areAllAnswersCorrect = true; // only when they are all right
         }
 
