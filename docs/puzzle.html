@@ -62,15 +62,15 @@
         if (userAnswer1 == "alta plaza") {
           // userAnswer1 = allowedAnswer1; 
           userAnswer1_correct = true;
-          document.getElementById("status1").textContent = "37";
+          document.getElementById("status1").textContent = "(";
         }
         if (userAnswer2 == "ggp") {
           userAnswer2_correct = true; //now its more specific
-          document.getElementById("status2").style.color = "green";
+          document.getElementById("status2").textContent = "8";
         }
         if (userAnswer3 == "powell") {
           userAnswer3_correct = true;
-          document.getElementById("status3").style.color = "green";
+          document.getElementById("status3").textContent = "5";
         }
 
         if (userAnswer1_correct && userAnswer2_correct && userAnswer3_correct) {
