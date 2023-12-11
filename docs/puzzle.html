@@ -59,16 +59,16 @@
         userAnswer2 = document.getElementById("answer2").value.trim();
         userAnswer3 = document.getElementById("answer3").value.trim();
 
-        if (userAnswer1 == "alta plaza", "Alta Plaza", "alta plaza park", "alta plaza park") {
+        if (userAnswer1 == "alta plaza", "Alta Plaza", "alta plaza park", "alta plaza park", "24") {
           // userAnswer1 = allowedAnswer1; 
           userAnswer1_correct = true;
           document.getElementById("status1").textContent = "(";
         }
-        if (userAnswer2 == "ggp") {
+        if (userAnswer2 == "ggp", "Golden Gate Park", "GGP", "golden gate park", "7") {
           userAnswer2_correct = true; //now its more specific
           document.getElementById("status2").textContent = "8";
         }
-        if (userAnswer3 == "powell") {
+        if (userAnswer3 == "powell", "powell station", "Powell BART", "Powell MUNI", "F", "f", "6", "7", "9", "J", "j", "K", "k", "M", "m", "N", "n") {
           userAnswer3_correct = true;
           document.getElementById("status3").textContent = "5";
         }
