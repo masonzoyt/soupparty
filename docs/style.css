@@ -1,7 +1,7 @@
 html {
     background-image: url("roots-background.png");
     background-size: cover;
-    font-family: sans-serif;
+    font: trattatello;
     display: flex; 
     justify-content: center; 
     align-items: center; */
