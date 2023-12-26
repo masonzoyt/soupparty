@@ -4,8 +4,8 @@ html{
   text-align: center;
   
   background-image: url("spaceworm.png");
-  /* width: 1920px; 
-  height: 1280px; */
+  width: 1920px; 
+  height: 1280px;
   background-size: contain;
   background-repeat: no-repeat; 
 }
@@ -25,6 +25,7 @@ p{
 .answers1 {
   font-family: Luminari, fantasy;
   text-align: left;
+  font-size: 23px;
 }
 
 .answers1 label{
