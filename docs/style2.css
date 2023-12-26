@@ -1,15 +1,115 @@
 html{
-    text-align: center;
-    font-family: sans-serif;
-    text-color: gray;
-    background-image: url("coolerbackground.png");
+  font-family: Luminari, fantasy;
+  margin: 20px;
+  text-align: center;
+background-image: url("coolerbackground.png");
 }
 
-html div.square {
-  height: 50px;
-  width: 50px;
-  background-color: #555;
+h1{
+  color: blue;
 }
+
+p{
+  color: red;
+}
+
+
+/* SECTION 1 YK HOW IT IS */
+
+.answers1 {
+  font-family: Luminari, fantasy;
+  text-align: left;
+}
+
+.answers1 label{
+  font-size: 23px;
+}
+.answers1 span{
+  display: block;
+  margin-bottom: 10px;
+  margin-left: 30px
+  font-family: Palatino, serif;
+}
+
+.asnwers1 input{
+  width: 100px;
+  display: block;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  margin-left: auto; 
+  margin-right: auto; 
+  width: 50
+}
+
+
+
+
+
+/* SECTION 2 */
+
+.answers2 {
+  color: blue;
+  text-align: right;
+  padding-top: 50px;
+}
+
+.answers2 label{
+  width: 30px;
+  font-size: 23px;
+  margin-left: 400px;
+}
+.answers2 span{
+  display: block;
+  margin-bottom: 10px;
+  margin-left: 30px
+  font-family: Palatino, serif;
+}
+
+.asnwers2 input{
+  width: 100px;
+  display: block;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  margin-left: auto; 
+  margin-right: auto; 
+  width: 50
+}
+
+
+
+
+/* SECTION 3 */
+
+
+.answers3 {
+  padding-top: 50px;
+  text-align: left;
+  margin-right: 450px;
+}
+
+
+.answers3 label{ 
+  font-size: 23px;
+
+}
+
+.answers3 span{ 
+  display: block;
+  margin-bottom: 10px;
+  margin-left: 30px
+}
+
+.asnwers3 input{
+  display: block;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  margin-left: auto; 
+  margin-right: auto; 
+  width: 50px
+}
+
+
+
 
 
 
