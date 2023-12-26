@@ -4,6 +4,7 @@ html{
   text-align: center;
   background-image: url("spaceworm.png");
   background-size: contain;
+  background-repeat: no-repeat; 
 }
 
 h1{
