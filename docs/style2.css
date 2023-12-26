@@ -25,7 +25,7 @@ p{
 .answers1 {
   font-family: Luminari, fantasy;
   text-align: left;
-  font-size: 45px;
+  font-size: 23px;
 }
 
 .answers1 label{
@@ -34,7 +34,8 @@ p{
 .answers1 span{
   display: block;
   margin-bottom: 10px;
-  margin-left: 20px
+  margin-left: 20px;
+  font-size: 15px;
   font-family: Palatino, serif;
 }
 
