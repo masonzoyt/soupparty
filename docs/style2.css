@@ -3,7 +3,7 @@ html{
   margin: 20px;
   text-align: center;
   background-image: url("spaceworm.png");
-  background-size: cover;
+  background-size: contain;
 }
 
 h1{
