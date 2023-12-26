@@ -73,10 +73,11 @@ p{
 }
 
 .answers2 input{
-  width: 100px;
+ width: 100px;
+  display: block;
   margin-bottom: 10px;
-  margin-left: 600px;
   margin-top: 10px;
+  margin-left: 500px; 
 }
 
 
