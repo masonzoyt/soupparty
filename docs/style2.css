@@ -4,8 +4,8 @@ html{
   text-align: center;
   
   background-image: url("spaceworm.png");
-  width: 2920px; 
-  height: 2280px;
+  width: 1366px; 
+  height: 768px;
   background-size: contain;
   background-repeat: no-repeat; 
 }
