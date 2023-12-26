@@ -2,10 +2,14 @@ html{
   font-family: Luminari, fantasy;
   margin: 20px;
   text-align: center;
+  
   background-image: url("spaceworm.png");
+  width: 1920px; 
+  height: 1280px;
   background-size: contain;
   background-repeat: no-repeat; 
 }
+
 
 h1{
   color: blue;
