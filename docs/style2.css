@@ -2,7 +2,6 @@ html{
   font-family: Luminari, fantasy;
   margin: 20px;
   text-align: center;
-background-image: url("coolerbackground.png");
 }
 
 h1{
@@ -17,6 +16,7 @@ p{
 /* SECTION 1 YK HOW IT IS */
 
 .answers1 {
+  font-family: Luminari, fantasy;
   text-align: left;
 }
 
@@ -106,8 +106,6 @@ p{
   margin-right: auto; 
   width: 50px
 }
-
-
 
 
 
