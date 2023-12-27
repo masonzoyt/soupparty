@@ -72,18 +72,20 @@ p{
 .answers2 label{
   width: 30px;
   font-size: 23px;
+  margin-right: 30px;
   margin-left: 400px;
 }
 .answers2 span{
   display: block;
   margin-bottom: 10px;
   margin-left: 30px
+  margin-right: 30px;
   font-family: Palatino, serif;
 }
 
 .answers2 input{
  width: 100px;
-  
+  margin-right: 30px
   margin-bottom: 10px;
   margin-top: 10px;
   margin-left: 1600px; 
