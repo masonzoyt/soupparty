@@ -1,4 +1,4 @@
-html{
+body{
   font-family: Luminari, fantasy;
 
   text-align: center;
@@ -9,7 +9,9 @@ html{
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  
+  margin: 0;
+  padding: 0;
+
 }
 
 
