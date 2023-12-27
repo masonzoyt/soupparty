@@ -6,9 +6,9 @@ html{
   background-image: url("spaceworm.png");
   /*width: 1366px; 
   height: 768px; */
-  absoloute-width: 100vw;
-  background-size: contain;
-  background-repeat: no-repeat; 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   
 }
 
