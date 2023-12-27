@@ -29,7 +29,7 @@ p{
 /* SECTION 1 YK HOW IT IS */
 
 .answers1 {
-  text-color: #6E7AB8;
+  color: #6E7AB8;
   font-family: Luminari, fantasy;
   text-align: left;
   font-size: 23px;
@@ -37,7 +37,7 @@ p{
 }
 
 .answers1 label{
-  text-color: #6E7AB8;
+  color: #6E7AB8;
   font-size: 23px;
 }
 .answers1 span{
