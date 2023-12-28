@@ -14,56 +14,9 @@ body {
 }
 
 
-h1{
-    text-align: center; 
+.intro p{
+    max-width: 1000px;
 }
-
-p{
-    font-size: 23px; 
-    margin: 100px;
-    text-align: center; 
-    
-} 
-
-#p2{
-    text-align: center; 
-}
-
-p3{
-    text-align: center; 
-}
-
-p4{
-    text-align: center; 
-}
-
-p5{
-    text-align: center; 
-}
-
-p6{
-    text-align: center; 
-}
-
-p7{
-    text-align: center; 
-}
-    
-
-.countDownDate div {
-    display: inline-block;
-    margin-right: 10px; /* Adjust as needed for spacing between elements */
-}
-
-#days,
-#hours,
-#minutes,
-#seconds {
-    display: inline-block;
-    margin-right: 5px; /* Adjust as needed for spacing between number and word */
-}
-
-
 
 
 
