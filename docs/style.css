@@ -18,7 +18,7 @@ h1{
 }
 
 .intro{
-    text-align: center; 
+    
     margin: 60px; 
 }
 
@@ -30,11 +30,12 @@ h1{
     font-size: 25px;
 
 .intro p2{
+    text-align: center; 
     margin-top: 20px; 
 }
 
 .intro p3{
-
+    text-align: center; 
 }
 
 .intro p4{
