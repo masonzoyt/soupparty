@@ -11,55 +11,48 @@ body {
     margin: 0;
     padding: 0;
     font-size: 25px;
-    
 }
 
-h1{
+h1 {
     text-align: center;
     margin-bottom: 20px;
 }
 
-.intro{
+.intro {
     margin: 100px; 
-
-    
 }
 
-
-.intro p1{
+.intro p1 {
     margin-bottom: 20px; 
     text-align: left; 
     margin-left: 200px; 
     font-size: 30px;
 }
 
-.intro p2{
+.intro p2 {
     text-align: center; 
     margin-top: 20px; 
-    text-indent: 10px
+    text-indent: 10px;
 }
 
-.intro p3{
+.intro p3 {
     text-align: center; 
     padding-top: 20px;
 }
 
-.intro p4{
+.intro p4 {
     margin-top: 20px;
-
 }
 
-.intro p5{ 
+.intro p5 { 
     margin-top: 20px;
-
 }
 
-.intro p6{
+.intro p6 {
     margin-top: 20px;
-
 }
 
-.intro p7{
+.intro p7 {
     margin-top: 20px;
     text-align: center; 
     font-size: 25px;
