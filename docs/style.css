@@ -16,9 +16,15 @@ html {
 } 
 
 
+.countDownDate div {
+    display: inline-block; 
+    margin: 20px; 
+}
 
-
-
+#days {
+    display: inline-block; 
+    font-size: 23px;
+}
 
 
 
