@@ -15,6 +15,12 @@ html {
     
 } 
 
+.intro p2{
+    align: center; 
+}
+
+
+    
 
 .countDownDate div {
     display: inline-block;
