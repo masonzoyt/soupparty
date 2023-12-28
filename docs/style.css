@@ -21,9 +21,13 @@ body {
 
 
 .intro p1{
+    text-align: center; 
     font-size: 23px;
 }
 
+.intro p2{
+    margin-top: 20px; 
+}
 
 
 
