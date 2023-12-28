@@ -17,13 +17,16 @@ html {
 
 
 .countDownDate div {
-    display: inline-block; 
-    margin: 20px; 
+    display: inline-block;
+    margin-right: 10px; /* Adjust as needed for spacing between elements */
 }
 
-#days {
-    display: inline-block; 
-    font-size: 23px;
+#days,
+#hours,
+#minutes,
+#seconds {
+    display: inline-block;
+    margin-right: 5px; /* Adjust as needed for spacing between number and word */
 }
 
 
