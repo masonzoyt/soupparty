@@ -16,9 +16,13 @@ body {
 
 .intro{
     text-align: center; 
-    margin: 20px; 
+    margin: 60px; 
 }
 
+
+.intro p1{
+    font-size: 23px;
+}
 
 
 
