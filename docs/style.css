@@ -5,14 +5,14 @@ html {
     display: flex; 
     justify-content: center; 
     align-items: center; 
-    margin: 100px; 
+    
 }
 
 
 .intro p1{
     font-size: 23px; 
-    margin-top: 20px; 
-    margin-bottom: 20px; 
+    margin: 100px;
+    
 } 
 
 
