@@ -23,9 +23,10 @@ h1{
 }
 
 
-.intro p1{
+.intro p.intro1{
     text-align: center; 
     font-size: 23px;
+    color: green; 
 }
 
 .intro p2{
