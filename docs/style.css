@@ -32,7 +32,7 @@ h1 {
 .intro p2 {
     text-align: center; 
     margin-top: 20px; 
-    text-indent: 10px;
+    text-indent: 500px;
 }
 
 .intro p3 {
@@ -41,19 +41,20 @@ h1 {
 }
 
 .intro p4 {
-    margin-top: 20px;
+    
 }
 
 .intro p5 { 
-    margin-top: 20px;
+    
 }
 
 .intro p6 {
-    margin-top: 20px;
+    
 }
 
 h2 {
     text-align: center; 
+    margin-top: 0px; 
 }
 
 
