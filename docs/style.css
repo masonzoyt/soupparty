@@ -16,11 +16,12 @@ h1{
 p1{
     font-size: 23px; 
     margin: 100px;
+    text-align: center; 
     
 } 
 
 p2{
-    align: center; 
+    text-align: center; 
 }
 
 
