@@ -15,7 +15,8 @@ body {
 
 
 .intro p{
-    max-width: 1000px;
+    text-align: center; 
+    margin: 20px; 
 }
 
 
