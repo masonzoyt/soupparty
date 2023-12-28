@@ -57,7 +57,24 @@ h2 {
     margin-top: 0px; 
 }
 
-.countDownDate days{ 
-    font-size: 48px; 
-}
 
+
+.container {
+    display: flex;
+    align-items: center; /* Optional: Align items vertically in the center */
+    justify-content: center; /* Optional: Align items horizontally in the center */
+  }
+
+  /* Additional styling for countdown items */
+  .countDownDate {
+    margin-right: 10px; /* Optional: Add some space between countdown and other items */
+  }
+
+  /* Adjust styles as needed */
+  p {
+    margin: 0;
+  }
+
+  span {
+    margin-left: 5px; /* Optional: Add some space between the number and unit (Days, Hours, etc.) */
+  }
