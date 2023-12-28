@@ -9,13 +9,17 @@ html {
 }
 
 
-.intro p1{
+h1{
+    text-align: center; 
+}
+
+p1{
     font-size: 23px; 
     margin: 100px;
     
 } 
 
-.intro p2{
+p2{
     align: center; 
 }
 
