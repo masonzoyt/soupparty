@@ -59,22 +59,21 @@ h2 {
 
 
 
-.container {
+.container{
+    width: 700px; 
+    height: 200px;
+    padding: 40px;
+}
+
+.countDownDate {
     display: flex;
-    align-items: center; /* Optional: Align items vertically in the center */
-    justify-content: center; /* Optional: Align items horizontally in the center */
-  }
+}
 
-  /* Additional styling for countdown items */
-  .countDownDate {
-    margin-right: 10px; /* Optional: Add some space between countdown and other items */
-  }
+.countDownDate div{
+    flext-basis: 100px
+}
 
-  /* Adjust styles as needed */
-  p {
-    margin: 0;
-  }
-
-  span {
-    margin-left: 5px; /* Optional: Add some space between the number and unit (Days, Hours, etc.) */
-  }
+.countDownDate div p{ 
+    font-size: 60px;
+    margin-bottom: -14px; 
+}
