@@ -80,3 +80,29 @@ h2 {
 
 
 
+table{
+  margin-left: auto;
+  margin-right: auto;
+  border-spacing: 15px; 
+}
+
+
+td {
+  font-size: 25px;
+  margin: auto; 
+  text-align: center;
+
+}
+
+
+
+thead {
+  font-size: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+
+
+
+
