@@ -20,13 +20,12 @@ body {
 }
 
 .countDownDate {
-    display: flex;
-    flex-direction: column;
-}
+    display: block;
+    
 
-.countDownDate div{
+/* .countDownDate div{
     flext-basis: 200px;
-}
+} */
 
 .countDownDate div p{ 
     font-size: 60px;
