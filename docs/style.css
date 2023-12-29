@@ -67,6 +67,7 @@ h2 {
 
 .countDownDate {
     display: flex;
+    flex-direction: column;
 }
 
 .countDownDate div{
