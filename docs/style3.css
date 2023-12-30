@@ -1,8 +1,62 @@
-html{
-    text-align: center;
-    font-family: sans-serif;
-    background-color: darkgrey;
+html {
+  font-family: Luminari, fantasy;
 }
-h1{
-    padding-top: 20 px;
+
+h1 {
+  margin-left: 350px;
+}
+
+h2 {
+  margin-left: 300px;
+  font-size: 25px;
+
+}
+
+body {
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; 
+  justify-content: center;
+  min-height: 100vh; 
+  margin-left: 400px;
+  
+}
+
+
+
+
+
+
+
+body div{ 
+  text-indent: 25px;
+  color: purple;
+}
+
+
+
+.p2 {
+  text-align: center;
+  justify-content: center;
+}
+
+.p3 {
+  
+} 
+
+.p4 {
+  
+} 
+
+.p5 {
+  font-size: 25px;
+  
+  text-indent: 20px;
+}
+
+
+
+.p10{
+  margin-left: 360px;
 }
