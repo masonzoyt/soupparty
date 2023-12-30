@@ -3,6 +3,7 @@ body {
     background-size: cover;
     font-family: Luminari, fantasy;
     display: flex; 
+    flex-direction: column; 
     justify-content: center; 
     align-items: center; 
     background-size: cover;
