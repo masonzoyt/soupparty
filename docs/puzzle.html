@@ -6,190 +6,162 @@
 </head>
 
 <body>
-  <h1 class= "h1"> soup party: see you there? </h1>
-  <p> press ENTER to check for correctness. </p>
-  <p> your answers won't save when you close this tab. might be worth it to keep them safe somewhere. </p>
-  <p> can't see the second set of questions' input boxes? scroll to the right. </p>
-
-
+  <h1 class="h1">Soup Party: See You There?</h1>
+  <p>Press ENTER to check for correctness.</p>
+  <p>Your answers won't save when you close this tab. It might be worth it to keep them safe somewhere.</p>
+  <p>Can't see the second set of questions' input boxes? Scroll to the right.</p>
 
   <div id="answerTarget" class="question-container">
     <!--- what does putting them in divs do? -->
-    
-      <section class="answers1">
-        <div>
-          <label for="answer1">jackson & steiner?</label>
-          <input type="text" id="answer1" required>
-          <span id="status1" style="color:green">something exciting this way comes</span>
-        <div>
-          <label for="answer2">frederick & stanyan?</label>
-          <input type="text" id="answer2" required>
-          <span id="status2" style="color:green">i wonder what could appear here</span>
-        </div>
-        <div>
-          <label for="answer3">market & fifth?</label>
-          <input type="text" id="answer3" required>
-          <span id="status3" style="color:green">you know what they say about text under the input box...</span>
-        </div>
-   
+
+    <section class="answers1">
+      <div>
+        <label for="answer1">Jackson & Steiner?</label>
+        <input type="text" id="answer1" required>
+        <span id="status1" style="color:green">Something exciting this way comes</span>
+      </div>
+      <div>
+        <label for="answer2">Frederick & Stanyan?</label>
+        <input type="text" id="answer2" required>
+        <span id="status2" style="color:green">I wonder what could appear here</span>
+      </div>
+      <div>
+        <label for="answer3">Market & Fifth?</label>
+        <input type="text" id="answer3" required>
+        <span id="status3" style="color:green">You know what they say about text under the input box...</span>
+      </div>
+    </section>
 
     <!-- include the dashes of the phone number -->
 
-
     <section class="answers2">
       <div>
-        <label for="answer4">as of 2023, how many street trees exist in SoMA?</label>
+        <label for="answer4">As of 2023, how many street trees exist in SoMA?</label>
         <input type="text" id="answer4" required>
-        <span id="status4" style="color:green">whatever happens here must be neat</span>
+        <span id="status4" style="color:green">Whatever happens here must be neat</span>
       </div>
-      </label>
       <div>
-        <label for="answer5">a common rock type on Alcatraz is...</label>
+        <label for="answer5">A common rock type on Alcatraz is...</label>
         <input type="text" id="answer5" required>
-        <span id="status5" style="color:green">i'd trust a guy who showed up under the input box</span>
+        <span id="status5" style="color:green">I'd trust a guy who showed up under the input box</span>
       </div>
-      </label>
       <div>
         <label for="answer6">How many California dams are managed by the California Division Safety of Dams?</label>
         <input type="text" id="answer6" required>
-        <span id="status6" style="color:green">enticing things on their way to arrival, in this very spot</span>
+        <span id="status6" style="color:green">Enticing things on their way to arrival, in this very spot</span>
       </div>
-      </label>
     </section>
 
-  <section class="answers3">
-    <div>
-      <label for="answer7">Which United States emperor was named “protector of Mexico” in 1863? </label>
-      <input type="text" id="answer7" required>
-      <span id="status7" style="color:green">mystery reigns in this row of text</span>
-    </div>
-    </label>
-    <div>
-      <label for="answer8">MUNI’s PCC streetcar 1061 is painted for what system/company?</label>
-      <input type="text" id="answer8" required>
-      <span id="status8" style="color:green">surfacing here, must be something important</span>
-    </div>
-    </label>
-    <div>
-      <label for="answer9">What was treasure island first built for?</label>
-      <input type="text" id="answer9" required>
-      <span id="status9" style="color:green">well, you can never tell till you guess right</span>
-    </div>
-    </label>
-    <div>
-      <label for="answer10">What’s the range of elevation in SF? (imperial) </label>
-      <input type="text" id="answer10" required>
-      <span id="status10" style="color:green">ooooo mystery message</span>
-    </div>
-    </label>
-  </div>
+    <section class="answers3">
+      <div>
+        <label for="answer7">Which United States emperor was named “protector of Mexico” in 1863?</label>
+        <input type="text" id="answer7" required>
+        <span id="status7" style="color:green">Mystery reigns in this row of text</span>
+      </div>
+      <div>
+        <label for="answer8">MUNI’s PCC streetcar 1061 is painted for what system/company?</label>
+        <input type="text" id="answer8" required>
+        <span id="status8" style="color:green">Surfacing here, must be something important</span>
+      </div>
+      <div>
+        <label for="answer9">What was Treasure Island first built for?</label>
+        <input type="text" id="answer9" required>
+        <span id="status9" style="color:green">Well, you can never tell till you guess right</span>
+      </div>
+      <div>
+        <label for="answer10">What’s the range of elevation in SF? (imperial)</label>
+        <input type="text" id="answer10" required>
+        <span id="status10" style="color:green">Ooooo mystery message</span>
+      </div>
+    </section>
 
- 
-  
+    <script>
+      var successButton = document.getElementById("success-button");
 
+      var inputElement = document.getElementById("answerTarget");
 
+      var userAnswer1_correct = false;
+      var userAnswer2_correct = false;
+      var userAnswer3_correct = false;
 
-  <!-- <button id="submit-button"> test my wits </button> -->
-  <!-- <a href= "almost.html"> -->
+      var userAnswer4_correct = false;
+      var userAnswer5_correct = false;
+      var userAnswer6_correct = false;
 
-  <!--<button id="success-button" style="display: none;"> continue </button>-->
+      var userAnswer7_correct = false;
+      var userAnswer8_correct = false;
+      var userAnswer9_correct = false;
+      var userAnswer10_correct = false;
 
-        <script> // this part is supposed to only allow submit if all questions are correct 
-          
-          var successButton = document.getElementById("success-button");
-          
-          var inputElement = document.getElementById("answerTarget");
+      var areAllAnswersCorrect = false;
 
-          var userAnswer1_correct = false; //user answer is automatically false
-          var userAnswer2_correct = false; 
-          var userAnswer3_correct = false;
-          
-          var userAnswer4_correct = false;
-          var userAnswer5_correct = false;
-          var userAnswer6_correct = false;
+      inputElement.addEventListener("keypress", function (event) {
+        if (event.key === "Enter" || event.keyCode === 13) {
+          var userAnswer1 = document.getElementById("answer1").value.trim();
+          var userAnswer2 = document.getElementById("answer2").value.trim();
+          var userAnswer3 = document.getElementById("answer3").value.trim();
+          var userAnswer4 = document.getElementById("answer4").value.trim();
+          var userAnswer5 = document.getElementById("answer5").value.trim();
+          var userAnswer6 = document.getElementById("answer6").value.trim();
+          var userAnswer7 = document.getElementById("answer7").value.trim();
+          var userAnswer8 = document.getElementById("answer8").value.trim();
+          var userAnswer9 = document.getElementById("answer9").value.trim();
+          var userAnswer10 = document.getElementById("answer10").value.trim();
 
-          var userAnswer7_correct = false;
-          var userAnswer8_correct = false;
-          var userAnswer9_correct = false;
-          var userAnswer10_correct = false;
-
-          var areAllAnswersCorrect = false; //this is also automatically false 
-
-          inputElement.addEventListener("keypress", function (event) {
-            if (event.key === "Enter" || event.keyCode === 13) {
-
-              userAnswer1 = document.getElementById("answer1").value.trim(); //trim= remove whitespace
-              userAnswer2 = document.getElementById("answer2").value.trim();
-              userAnswer3 = document.getElementById("answer3").value.trim();
-              userAnswer4 = document.getElementById("answer4").value.trim();
-              userAnswer5 = document.getElementById("answer5").value.trim();
-              userAnswer6 = document.getElementById("answer6").value.trim();
-              userAnswer7 = document.getElementById("answer7").value.trim();
-              userAnswer8 = document.getElementById("answer8").value.trim();
-              userAnswer9 = document.getElementById("answer9").value.trim();
-              userAnswer10 = document.getElementById("answer10").value.trim();
-              
-              if (userAnswer1 == "alta plaza" || userAnswer1 == "Alta Plaza" || userAnswer1 == "alta plaza park" || userAnswer1 == "Alta Plaza Park" || userAnswer1 == "24") {
-                // userAnswer1 = allowedAnswer1; 
-                userAnswer1_correct = true;
-                document.getElementById("status1").textContent = "8";
-              }
-              if (userAnswer2 == "ggp" || userAnswer2 == "GGP" || userAnswer2 == "golden gate park" || userAnswer2 == "Golden Gate Park" || userAnswer2 == "7") {
-                userAnswer2_correct = true; //now its more specific
-                document.getElementById("status2").textContent = "5";
-              }
-              if (userAnswer3 == "powell" || userAnswer3 == "Powell" || userAnswer3 == "Powell Station" || userAnswer3 == "powell BART" || userAnswer3 == "powell MUNI" || userAnswer3 == "powell muni" || userAnswer3 == "trains lol" || userAnswer3 == "K" || userAnswer3 == "N" || userAnswer3 == "M" || userAnswer3 == "J" || userAnswer3 == "6" || userAnswer3 == "7" || userAnswer3 == "9") {
-                userAnswer3_correct = true;
-                document.getElementById("status3").textContent = "5";
-              }
-
-              //cluster 2
-              if (userAnswer4 == "7,176"|| userAnswer4 == "7176" || userAnswer4 == "7168" || userAnswer4 == "7,168" || userAnswer4 == "7,401" || userAnswer4 == "7401" || userAnswer4 == "7,401") {
-                userAnswer4_correct = true;
-                document.getElementById("status4").textContent = "7";
-              }
-              if (userAnswer5 == "graywacke" || userAnswer5 == "shale" || userAnswer5 == "sandstone") {
-                userAnswer5_correct = true;
-                document.getElementById("status5").textContent = "0";
-              }
-              if (userAnswer6 == "over 1200" || userAnswer6 == "1200+" || userAnswer6 == "1200"|| userAnswer6 == "1249" || userAnswer6 == "1,249" || userAnswer6 == "1,200") {
-                userAnswer6_correct = true;
-                document.getElementById("status6").textContent = "1";
-              }
-
-              //cluster 3
-              if (userAnswer7 == "Emperor Norton" || userAnswer7 == "emperor norton" || userAnswer7 == "norton" || userAnswer7 == "Norton" || userAnswer7 == "joshua norton" || userAnswer7 == "Joshua Norton") {
-                userAnswer7_correct = true;
-                document.getElementById("status7").textContent = "8";
-              }
-              if (userAnswer8 == "Pacific Electric" || userAnswer8 == "pacific electric" || userAnswer8 == "PE" || userAnswer8 == "pacific electric company" || userAnswer8 == "Pacific Electric Company") {
-                userAnswer8_correct = true;
-                document.getElementById("status8").textContent = "2";
-              }
-              if (userAnswer9 == "GGIE" || userAnswer9 == "ggie" || userAnswer9 == "Golden Gate International Exposition" || userAnswer9 == "goldern gate international exposition") {
-                userAnswer9_correct = true;
-                document.getElementById("status9").textContent = "9";
-              }
-              if (userAnswer10 == "0-938" || userAnswer10 == "0-938 ft" || userAnswer10 == "0-938ft"
-                 || userAnswer10 == "938 ft" || userAnswer10 == "938" || userAnswer10 == "0 - 938 ft" userAnswer10 == "0-934" || userAnswer10 == "0-934 ft" || userAnswer10 == "0-934ft" || userAnswer10 == "934" || userAnswer10 == "0 - 934 ft" ||) {
-                userAnswer10_correct = true;
-                document.getElementById("status10").textContent = "2";
-              }
-
-
-
-              if (userAnswer1_correct && userAnswer2_correct && userAnswer3_correct && userAnswer4_correct && userAnswer5_correct && userAnswer6_correct && userAnswer7_correct 
-                 && userAnswer8_correct && userAnswer9_correct && userAnswer10_correct) {
-                areAllAnswersCorrect = true; // only when they are all right
-              }
-
-              if (areAllAnswersCorrect) {
-                alert("unknown numbers are frequent scams... but i wonder what this one's for? send over the name of your favorite soup.");
-              }
-            }
+          if (userAnswer1 == "Alta Plaza" || userAnswer1 == "alta plaza park" || userAnswer1 == "24") {
+            userAnswer1_correct = true;
+            document.getElementById("status1").textContent = "8";
           }
-          );
-        </script>
+          if (userAnswer2 == "Golden Gate Park" || userAnswer2 == "7") {
+            userAnswer2_correct = true;
+            document.getElementById("status2").textContent = "5";
+          }
+          if (userAnswer3 == "Powell Station" || userAnswer3 == "K" || userAnswer3 == "N" || userAnswer3 == "M" || userAnswer3 == "J" || userAnswer3 == "6" || userAnswer3 == "7" || userAnswer3 == "9") {
+            userAnswer3_correct = true;
+            document.getElementById("status3").textContent = "5";
+          }
+
+          if (userAnswer4 == "7176" || userAnswer4 == "7,176") {
+            userAnswer4_correct = true;
+            document.getElementById("status4").textContent = "7";
+          }
+          if (userAnswer5 == "graywacke") {
+            userAnswer5_correct = true;
+            document.getElementById("status5").textContent = "0";
+          }
+          if (userAnswer6 == "1200+") {
+            userAnswer6_correct = true;
+            document.getElementById("status6").textContent = "1";
+          }
+
+          if (userAnswer7 == "Emperor Norton" || userAnswer7 == "joshua norton") {
+            userAnswer7_correct = true;
+            document.getElementById("status7").textContent = "8";
+          }
+          if (userAnswer8 == "Pacific Electric" || userAnswer8 == "PE") {
+            userAnswer8_correct = true;
+            document.getElementById("status8").textContent = "2";
+          }
+          if (userAnswer9 == "Golden Gate International Exposition") {
+            userAnswer9_correct = true;
+            document.getElementById("status9").textContent = "9";
+          }
+          if (userAnswer10 == "0-938 ft" || userAnswer10 == "938") {
+            userAnswer10_correct = true;
+            document.getElementById("status10").textContent = "2";
+          }
+
+          if (userAnswer1_correct && userAnswer2_correct && userAnswer3_correct && userAnswer4_correct && userAnswer5_correct && userAnswer6_correct && userAnswer7_correct &&
+            userAnswer8_correct && userAnswer9_correct && userAnswer10_correct) {
+            areAllAnswersCorrect = true;
+          }
+
+          if (areAllAnswersCorrect) {
+            alert("Unknown numbers are frequent scams... but I wonder what this one's for? Send over the name of your favorite soup.");
+          }
+        }
+      });
+    </script>
 
 </body>
 
