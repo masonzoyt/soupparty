@@ -1,5 +1,5 @@
 body {
-    background-image: url("sail-snake.png");
+    background-color: black; 
     background-size: cover;
     font-family: Luminari, fantasy;
     display: flex; 
