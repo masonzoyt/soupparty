@@ -1,7 +1,7 @@
 body {
     background-image: url("soup-2-worries-bg.png"); 
     background-size: cover;
-    font-family: Luminari, fantasy;
+    font-family: Tahoma, sans-serif;
     display: flex; 
     flex-direction: column; 
     justify-content: center; 
