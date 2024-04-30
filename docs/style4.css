@@ -14,19 +14,30 @@ body {
     font-size: 20px;
 }
 
-.text {
-    border-right: 5px solid; 
-    width: 100%; 
+
+.text::before {
+    display: block;
+    height: 100%; /* Set height to match text height */
+    position: absolute; /* Position absolute to overlay the text */
+    background-color: inherit; /* Inherit background color */
+    animation: typing 4s steps(36) forwards; /* Adjust duration and steps as needed */
+}
+
+/*
+.text::before{
+    content: " "; 
+    display: block; 
+    height: 100%; 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    width: 0;
+    border-right: 5px solid transparent; 
     white-space: nowrap; 
     overflow: hidden; 
     animation: 
-        typing 2s steps(15) 
-        cursor .4s step-end infinite alternate; 
-}
-
-@keyframes cursor {
-    50 % { border-color: transparent } 
-}
+        typing 2s steps(32) forwards;  
+*/
 
 @keyframes typing { 
     from { width: 0 } 
