@@ -1,7 +1,7 @@
 <!DOCTYPE html> 
 <html> 
     <link rel="stylesheet" href="style4.css">
-    <title> alright, let's do this one more time </title>
+    <title> SFSOUPPARTY.ORG/VOYAGER </title>
     <head> 
 
       
@@ -38,58 +38,45 @@
               <section class="line5"> 
                 <p class="line5">Do Your Fears Help You? Call The Hardtimes Hotline.</p>
               </section>
+
+
+
+
+              <div>
+                <label for="fearinput"></label>
+                <input type="text" id="answer1" required>
+              <div>
+                
+                <script>
+                  const form = document.querySelector("#form")
+                  const submitButton = document.querySelector("#submit")
+                  const scriptURL = 'https://script.google.com/macros/s/AKfycbw77KE41bl8RVYgMEvpywEljrUPsz1lHo1dUnzVphoSQxH-pjVhI9RVNyaov8VpugFj0Q/exec'
+               
+                  form.addEventListener('submit', e => {
+                    submitButton.disabled = true
+                    e.preventDefault()
+                    let requestBody = new FormData(form)
+                    fetch(scriptURL, { method: 'POST', body: requestBody})
+                      .then(response => {
+                         alert('Success!', response)
+                         submitButton.disabled = false
+                        })
+                      .catch(error => {
+                      alert('Error!', error.message)
+                        submitButton.disabled = false
+               
+                      }
+                      )
+                  })
+               </script>
+               
+
+
         </body>
 
+      
 
 
-
-<!-- Input box -->
-<input type="text" id="userInput" placeholder="Enter your data">
-
-<!-- Save button -->
-<button onclick="saveData()">Save</button>
-
-<!-- Display area for saved data -->
-<div id="savedData"></div>
-
-<script>
-// Function to save user data
-function saveData() {
-    // Get the value from the input box
-    var userInput = document.getElementById("userInput").value;
-    
-    // Check if user input is not empty
-    if (userInput.trim() !== "") {
-        // Create a new paragraph element to display the saved data
-        var para = document.createElement("p");
-        // Set the text content of the paragraph to the user input
-        para.textContent = userInput;
-        // Append the paragraph to the display area
-        document.getElementById("savedData").appendChild(para);
-        // Clear the input box
-        document.getElementById("userInput").value = "";
-    } else {
-        alert("Please enter some data.");
-    }
-}
-
-const fs = require('fs');
-
-// Function to save user data to a file
-function saveDataToFile(data) {
-    fs.writeFile('userdata.txt', data, (err) => {
-        if (err) throw err;
-        console.log('User data saved to file.');
-    });
-}
-
-// Example usage
-saveDataToFile('User entered data here.');
-
-
-
-
-</script>
 
 
     

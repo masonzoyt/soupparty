@@ -31,6 +31,9 @@ body {
     animation: typing 4s steps(69) forwards; /* Adjust duration and steps as needed */
 }
 
+.fearinput{
+  
+}
 
 .line3{
     font-size: small;
@@ -39,6 +42,7 @@ body {
 .line4{
 
 }
+
 
 
 /*
