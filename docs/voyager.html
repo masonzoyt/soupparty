@@ -42,60 +42,53 @@
             
 
             <form id="fear">
-                <input type="text" name="fear">
+                <input type="text" name="entry.1783686670"> 
                 <button type="submit" id="submit">Submit</button>
             </form>
             
-            <script>
-              function transferResponses(e) {
-                 var sheet = SpreadsheetApp.openById("1KBQYNU46gMRkUaOVlxqQNDC-1ldfx3WrTTrXZgsCTSE").getActiveSheet();
-                 var responses = e.namedValues;
-                  var row = [];
-  
-               // Adjust these fields according to your form fields
-                  var fields = ['fear'];
-  
-                 fields.forEach(function(field) {
-                 row.push(responses[field] ? responses[field][0] : '');
-                 });
-  
-                 sheet.appendRow(row);
-                }
-
-
-                const form = document.querySelector("#fear");
-                const submitButton = document.querySelector("#submit");
-                const scriptURL = 'https://script.google.com/macros/s/AKfycbwgJ6P5KehM6PmYBnLTH8Pz8mH1xz0EgsASYN3xHEjlqsESg3-woNH55JnNYHST-utakg/exec';
-            
-                form.addEventListener('submit', e => {
-                    submitButton.disabled = true;
-                    e.preventDefault();
-                    let requestBody = new FormData(form);
-                    fetch(scriptURL, { method: 'POST', body: requestBody })
-                        .then(response => {
-                            if (response.ok) {
-                                return response.json();
-                            } else {
-                                throw new Error('Network response was not ok.');
-                            }
-                        })
-                        .then(data => {
-                            alert('Success!', data);
-                            submitButton.disabled = false;
-                        })
-                        .catch(error => {
-                            alert('Error!', error.message);
-                            submitButton.disabled = false;
-                        });
-                });
-            </script>
-
-
+           
         </body>
 
+    <script>
+      // const div = document.querySelector(".text");
+      // const text = "this is a test";
+
+      // function textTypingEffect(element, text, i = 0) {
+      //   if (i === 0) {
+      //     element.textContent = "";
+      //   }
+
+      //   element.textContent += text[i];  //this funciton gets called with every character within the string being tyeped 
+
+      //   if (i === text.length - 1 ){
+      //     return;
+      //   }
+
+      //   setTimeout(() => textTypingEffect(element, text, i +1), 50);
+        
+      // }
       
+      // textTypingEffect(div, text, 8);
 
 
+      document.getElementById('fear').addEventListener('submit', function(e) {
+          e.preventDefault();
+
+          var formData = new FormData(this);
+
+          fetch('https://docs.google.com/forms/d/e/1FAIpQLSeaDArJEcCDVilbDgRG4-xQwjGV211Uc3LY2_JGlce8zKbXZQ/formResponse', {
+              method: 'POST', //a kind of request, above domain must 'acccept' them (there are other request genres) POST is for sending data 
+              body: formData,
+              mode: 'no-cors'
+          }).then(function(response) {
+              document.getElementById('fear').style.display = 'none';
+          }).catch(function(error) {
+              console.error('Error:', error);
+          });
+      });
+
+
+    </script>
 
 
     
