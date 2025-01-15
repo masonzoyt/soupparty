@@ -2,111 +2,106 @@
 <html> 
     <link rel="stylesheet" href="style.css">
     <title> SF soup party </title>
-    <head> 
-                <!-- Google tag (gtag.js) -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-J78W2FVFYC"></script>
-        <script>
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-        
-          gtag('config', 'G-J78W2FVFYC');
-        </script>
-    </head>
+  <head> 
+              <!-- Google tag (gtag.js) -->
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-J78W2FVFYC"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+      
+        gtag('config', 'G-J78W2FVFYC');
+      </script>
+  </head>
        
-        <body> 
-             
+  <body> 
+        
 
-            <h1 id= "headline">San Francisco Soup Party</h1> <!-- this will all be in a different webpage (story.html) once the strawb hill model is ready to rumble -->
+      <h1 id= "headline">San Francisco Soup Party</h1> <!-- this will all be in a different webpage (story.html) once the strawb hill model is ready to rumble -->
 
-                
-            <h2> <a href = "story.html">what the hell is a soup party?</a> </h2>
-                
-                
+      <h2> <a href = "story.html">what the hell is a soup party?</a> </h2>
+
+          <h3 id= "headline2">do you wish to <a href = "observe.html">embark? </a></h3>
+
+
+
+            <table>
             
+            <div class="countDownDate"> </div>
+            <tr>
+              <td>
+                <div>
+                      <p id="days">00</p>
+                  </div>
+              </td>
+              <td>
+                <div>
+                      <p id="hours">00</p>
+                  </div>
+              </td>
+              <td>
+                <div>
+                      <p id="minutes">00</p>
+                  </div>
+              </td>
+              <td> 
+                <div>
+                      <p id="seconds">00</p>
+                  </div>
+              </td>
+            </tr> 
 
-
-                <h3 id= "headline2">do you wish to <a href = "observe.html">embark? </a></h3>
-
-
-
-                  <table>
-                  
-                  <div class="countDownDate"> </div>
-                  <tr>
-                    <td>
-                      <div>
-                           <p id="days">00</p>
-                       </div>
-                    </td>
-                    <td>
-                      <div>
-                           <p id="hours">00</p>
-                       </div>
-                    </td>
-                    <td>
-                      <div>
-                           <p id="minutes">00</p>
-                       </div>
-                    </td>
-                    <td> 
-                      <div>
-                           <p id="seconds">00</p>
-                       </div>
-                    </td>
-                  </tr> 
-
-                  
-                  <thead>
-                    
-                    <td>
-                      <div>
-                           <span>Days</span>
-                       </div>
-                    </td>
-                    <td>
-                      <div>
-                           <span>Hours</span>
-                       </div>
-                    </td>
-                    <td>
-                      <div>
-                           <span>Minutes</span>
-                       </div>
-                    </td>
-                    <td> 
-                      <div>
-                           <span>Seconds</span>
-                       </div>
-                    </td>
-                    
-                  </thead>
-                </table>
+            
+            <thead>
+              
+              <td>
+                <div>
+                      <span>Days</span>
+                  </div>
+              </td>
+              <td>
+                <div>
+                      <span>Hours</span>
+                  </div>
+              </td>
+              <td>
+                <div>
+                      <span>Minutes</span>
+                  </div>
+              </td>
+              <td> 
+                <div>
+                      <span>Seconds</span>
+                  </div>
+              </td>
+              
+            </thead>
+          </table>
 
 
 
-            </divindex>
-            <script> 
-                var countDownDate = new Date("January 20, 2024 18:00:00").getTime();
-                var x = setInterval(function(){
-                    var now = new Date().getTime();
-                    var distance = countDownDate - now;
+      </divindex>
+      <script> 
+          var countDownDate = new Date("January 20, 2024 18:00:00").getTime();
+          var x = setInterval(function(){
+              var now = new Date().getTime();
+              var distance = countDownDate - now;
 
-                    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-                    var hours = Math. floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-                    var minutes = Math.floor ((distance % (1000 * 60 * 60)) / (1000 * 60));
-                    var seconds = Math.floor ((distance % (1000 * 60)) / 1000);
+              var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+              var hours = Math. floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+              var minutes = Math.floor ((distance % (1000 * 60 * 60)) / (1000 * 60));
+              var seconds = Math.floor ((distance % (1000 * 60)) / 1000);
 
-                    document.getElementById("days").innerHTML = days;toString().padStart(2, '0');
-                    document.getElementById("hours").innerHTML = hours;toString().padStart(2, '0');
-                    document.getElementById("minutes").innerHTML = minutes;toString().padStart(2, '0');
-                    document.getElementById("seconds").innerHTML = seconds;toString().padStart(2, '0');
+              document.getElementById("days").innerHTML = days;toString().padStart(2, '0');
+              document.getElementById("hours").innerHTML = hours;toString().padStart(2, '0');
+              document.getElementById("minutes").innerHTML = minutes;toString().padStart(2, '0');
+              document.getElementById("seconds").innerHTML = seconds;toString().padStart(2, '0');
 
-                }, 1000);
+          }, 1000);
 
-            </script>
-               
-        </body>
+      </script>
+          
+  </body>
 
     
 </html>
