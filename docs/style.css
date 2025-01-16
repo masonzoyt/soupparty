@@ -1,18 +1,17 @@
 body {
     background-image: url("nofacesoup.png");
-    background-size: cover;
+    background-size: 120%;
     font-family: Luminari, fantasy;
     display: flex; 
     flex-direction: column; 
     justify-content: center; 
     align-items: center; 
-    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     margin: 0;
     padding: 0;
     font-size: 20px;
-    color: #938a71;
+    color: whitesmoke;
 }
 
 html {
@@ -61,6 +60,12 @@ thead {
   margin-left: auto;
   margin-right: auto;
   
+}
+
+/* Add these styles */
+a:visited {
+    color: #d8eef2; 
+ 
 }
 
 
