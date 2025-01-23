@@ -1,5 +1,6 @@
 body {
     background-size: cover;
+    background-image: url("sweeny's bg.png");
     font-family: Luminari, fantasy;
     display: flex; 
     flex-direction: column; 
@@ -19,4 +20,5 @@ body {
 p0 {
     font-style: italic;
 }
+
 
