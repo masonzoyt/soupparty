@@ -1,21 +1,29 @@
 body {
-    /* background-image: url("sweeny's bg.png");
-    background-size: cover;*/ 
-    font-family: Ludica, monospace;
+    background-image: url("");
+    background-size: 120%;
+    font-family: monospace, 'Lucida Sans';
     display: flex; 
-    flex-direction: column; 
+    flex-direction: left; 
     justify-content: center; 
-    align-items: center; 
-    background-size: cover;
-    background-position: center;
+    align-items: left; 
+    background-position: right;
     background-repeat: no-repeat;
     margin: 0;
     padding: 0;
     font-size: 20px;
-}
+    color: rgb(32, 156, 32);
+  }
 
-input {
-    background-color: aqua;
-    border-radius: 20px;
-}
 
+  #yesNoInput {
+    background: transparent;
+    border: none;
+    color: rgb(52, 222, 52); 
+    font-size: 20px;
+    outline: none; /* Removes the focus outline */
+    width: 100px;
+  }
+  
+  #yesNoInput::placeholder {
+      color: rgb(52, 222, 52); /* Makes placeholder text slightly transparent */
+  }
