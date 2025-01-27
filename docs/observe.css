@@ -18,12 +18,12 @@ body {
   #yesNoInput {
     background: transparent;
     border: none;
-    color: rgb(52, 222, 52); 
+    color: rgb(32, 156, 32); 
     font-size: 20px;
     outline: none; /* Removes the focus outline */
     width: 100px;
   }
   
   #yesNoInput::placeholder {
-      color: rgb(52, 222, 52); /* Makes placeholder text slightly transparent */
+      color: rgb(32, 156, 32); /* Makes placeholder text slightly transparent */
   }
