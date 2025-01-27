@@ -1,7 +1,7 @@
 body {
     /* background-image: url("sweeny's bg.png");
     background-size: cover;*/ 
-    font-family: Luminari, fantasy;
+    font-family: Ludica, monospace;
     display: flex; 
     flex-direction: column; 
     justify-content: center; 
@@ -14,4 +14,8 @@ body {
     font-size: 20px;
 }
 
+input {
+    background-color: aqua;
+    border-radius: 20px;
+}
 
