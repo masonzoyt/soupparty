@@ -1,29 +1,34 @@
 body {
-    background-image: url("");
-    background-size: 120%;
-    font-family: monospace, 'Lucida Sans';
-    display: flex; 
-    flex-direction: left; 
-    justify-content: center; 
-    align-items: left; 
-    background-position: right;
-    background-repeat: no-repeat;
-    margin: 0;
-    padding: 0;
-    font-size: 20px;
-    color: rgb(32, 156, 32);
-  }
+  background-image: url("");
+  background-size: 120%;
+  font-family: monospace, 'Lucida Sans';
+  display: flex; 
+  flex-direction: left; 
+  justify-content: center; 
+  align-items: left; 
+  background-position: right;
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
+  font-size: 15px;
+  color: rgb(32, 156, 32);
+}
 
 
-  #yesNoInput {
-    background: transparent;
-    border: none;
-    color: rgb(32, 156, 32); 
-    font-size: 20px;
-    outline: none; /* Removes the focus outline */
-    width: 100px;
-  }
+#yesNoInput {
+  background: transparent;
+  border: none;
+  color: rgb(32, 156, 32); 
+  font-size: 20px;
+  outline: none; /* Removes the focus outline */
+  width: 100px;
+  font-family: monospace, 'Lucida Sans';
+}
   
-  #yesNoInput::placeholder {
-      color: rgb(32, 156, 32); /* Makes placeholder text slightly transparent */
-  }
+#yesNoInput::placeholder {
+    color: rgb(32, 156, 32); 
+}
+
+.correct-answer {
+  background-color: blue !important;
+}
