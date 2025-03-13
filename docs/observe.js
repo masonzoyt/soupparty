@@ -1,8 +1,13 @@
 // Get the input element from the HTML using its ID 'myInput'
 const input = document.getElementById('yesNoInput');
 // Add an array of colors to cycle through
-const colors = ['#143601', '#1A4301', '#245501', '#538D22', '#73A942'];
-let currentColorIndex = 0;
+const images = [
+    'image1.jpg', //change these to fr images 
+    'image 2.jpg', 
+    'image 3.jpg',
+    'image 4.jpg',
+]; 
+let currentImageIndex = 0;
 
 // Change from 'input' to 'keyup' event and check for Enter key
 input.addEventListener('keyup', function(event) {
@@ -12,11 +17,14 @@ input.addEventListener('keyup', function(event) {
         if (this.value.toLowerCase() === 'yes') {
             this.classList.add('correct-answer');
             // Cycle to next color
-            document.body.style.backgroundColor = colors[currentColorIndex];
+            document.body.style.backgroundImage = `url('${images[currentImageIndex]}')`;
+            document.body.style.backgroundSize = 'cover';
+            document.body.style.backgroundPosition = 'center';
             // Move to next color in array, loop back to start if at end
-            currentColorIndex = (currentColorIndex + 1) % colors.length;
+            currentColorIndex = (currentImageIndex + 1) % colors.length;
         } else {
             this.classList.remove('correct-answer');
         }
     }
 });
+

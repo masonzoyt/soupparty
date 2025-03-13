@@ -28,7 +28,3 @@ body {
 #yesNoInput::placeholder {
     color: rgb(32, 156, 32); 
 }
-
-.correct-answer {
-  background-color: blue !important;
-}
