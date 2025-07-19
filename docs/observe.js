@@ -2,10 +2,10 @@
 const input = document.getElementById('yesNoInput');
 // Add an array of colors to cycle through
 const images = [
-    'image1.jpg', //change these to fr images 
-    'image 2.jpg', 
-    'image 3.jpg',
-    'image 4.jpg',
+    '37.767502, -122.474141.png', //change these to fr images 
+    '37.769414, -122.474025.png', 
+    '37.769660, -122.477462.png',
+    '37.769579, -122.471638.png',
 ]; 
 let currentImageIndex = 0;
 
@@ -27,4 +27,3 @@ input.addEventListener('keyup', function(event) {
         }
     }
 });
-
