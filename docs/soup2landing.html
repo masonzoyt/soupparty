@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome</title>
+    <title>soup city</title>
     
 </head>
 
@@ -13,13 +13,45 @@
     <p> to learn about San Francisco's Soup Party, please visit: <a href="https://sfsoupparty.org/index.html"> our landing page</a></p>
 
 
-    <p> an epic adventure through the city of soup. Meet at (place) prepared to chart a path through the </p> <!-- soup party starts out at blue heron lake, 
+    <p> an epic adventure through the city of soup. </p>
+    
+    <label for="phone">phone number:</label><br>
+  <input type="tel" id="phone" name="entry.0987654321" required><br><br>
+
+  <form action="https://docs.google.com/forms/d/e/1FAIpQLSchF15RAc9Uay3hGnEE_Cb18s5L5sAZSUzFQWsrHccyQvenfQ/formResponse"
+      target="_self"
+      id="bootstrapForm"
+      method="POST">
+    <fieldset> <!--what is a fieldset-->
+        <h2>number<br><small></small></h2>
+    </fieldset>
+
+
+    <!-- Field type: "short" id: "1521702345" -->
+    <fieldset>
+        <legend for="1521702345">phone number</legend>
+        <div class="form-group">
+            <input id="1526571633" type="text" name="entry.1526571633" class="form-control" >
+        </div>
+    </fieldset>
+
+    <input type="hidden" name="fvv" value="1">
+    <input type="hidden" name="fbzx" value="-362502572703192314">
+    <!--
+        CAVEAT: In multipages (multisection) forms, *pageHistory* field tells to google what sections we've currently completed.
+        This usually starts as "0" for the first page, then "0,1" in the second page... up to "0,1,2..N" in n-th page.
+        Keep this in mind if you plan to change this code to recreate any sort of multipage-feature in your exported form.
+        We're setting this to the total number of pages in this form because we're sending all fields from all the section together.
+    -->
+    <input type="hidden" name="pageHistory" value="0">
+
+    <input class="btn btn-primary" type="submit" value="Submit">
+</form>
+    <!-- soup party starts out at blue heron lake, 
     leads to the land's end location via 'buses', cars that one person drives for each route purpose. You start by learning of history, reciveing instroctuons to
     locate your manual for the bus stop. "you must hurry, when this timer runs out you will be left behind. Unless you're at 9th and irving before then..."-->
 
-    
-
-
+<!--use the last digit of everyone's phone number to determine their starting location-->    
 
 </body>
 </html>
